@@ -129,17 +129,36 @@
 // You cannot assume the size of the array.
 // You can assume that you do get an array and if the array is empty, return 0.
 
-function sumArray(arr) {
-    let sum = 0
-    if (arr.length < 0) {
-        return 0
-    } else {
-        arr.forEach((x, i) => {
-            sum += x
-        })
+// function sumArray(arr) {
+//     let sum = 0
+//     if (arr.length < 0) {
+//         return 0
+//     } else {
+//         arr.forEach((x, i) => {
+//             sum += x
+//         })
 
-    }
+//     }
+//     return sum
+// }
+
+// sumArray([10, 3.5, 30])
+
+/////////// Completed ///////
+
+// I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
+
+// P.S. Each array includes only integer numbers. Output is a number too.
+
+function sum2Arrays(arr1, arr2) {
+    let sum = 0;
+    arr1.forEach((x, i) => {
+        sum += x
+    });
+    arr2.forEach((x, i) => {
+        sum += x
+    });
     return sum
 }
 
-sumArray([10, 3.5, 30])
+sum2Arrays([10, 10, 10], [5, 5, 2])
