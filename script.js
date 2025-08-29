@@ -100,10 +100,46 @@
 // "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
 
 
-function reverse(sentence) {
-    return sentence.split('').map(function (word) {
-        return word.split('').reverse().join('');
-    }).join('');
+// function reverse(sentence) {
+//     return sentence.split('').map(function (word) {
+//         return word.split('').reverse().join('');
+//     }).join('');
+// }
+
+// console.log(reverse('!dlrow olleh'))
+
+
+//// NOT FINISHED ////
+
+// Write a function that takes an array of numbers and returns the sum of the numbers. 
+// The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+// Examples
+// Input: [1, 5.2, 4, 0, -1]
+// Output: 9.2
+
+// Input: []
+// Output: 0
+
+// Input: [-2.398]
+// Output: -2.398
+
+// Assumptions
+// You can assume that you are only given numbers.
+// You cannot assume the size of the array.
+// You can assume that you do get an array and if the array is empty, return 0.
+
+function sumArray(arr) {
+    let sum = 0
+    if (arr.length < 0) {
+        return 0
+    } else {
+        arr.forEach((x, i) => {
+            sum += x
+        })
+
+    }
+    return sum
 }
 
-console.log(reverse('!dlrow olleh'))
+sumArray([10, 3.5, 30])
