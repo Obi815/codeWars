@@ -150,15 +150,29 @@
 
 // P.S. Each array includes only integer numbers. Output is a number too.
 
-function sum2Arrays(arr1, arr2) {
-    let sum = 0;
-    arr1.forEach((x, i) => {
+// function sum2Arrays(arr1, arr2) {
+//     let sum = 0;
+//     arr1.forEach((x, i) => {
+//         sum += x
+//     });
+//     arr2.forEach((x, i) => {
+//         sum += x
+//     });
+//     return sum
+// }
+
+// sum2Arrays([10, 10, 10], [5, 5, 2])
+
+// /////// Completed
+
+// Find the mean (average) of a list of numbers in an array.
+
+function mean(arr) {
+    let sum = 0
+    arr.forEach((x) => {
         sum += x
     });
-    arr2.forEach((x, i) => {
-        sum += x
-    });
-    return sum
+
+    return sum / arr.length
 }
 
-sum2Arrays([10, 10, 10], [5, 5, 2])
