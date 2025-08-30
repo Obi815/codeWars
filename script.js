@@ -167,12 +167,19 @@
 
 // Find the mean (average) of a list of numbers in an array.
 
-function mean(arr) {
-    let sum = 0
-    arr.forEach((x) => {
-        sum += x
-    });
+// function mean(arr) {
+//     let sum = 0
+//     arr.forEach((x) => {
+//         sum += x
+//     });
 
-    return sum / arr.length
+//     return sum / arr.length
+// }
+
+/////////  completed ///////////////
+
+
+function friendOrFOe(arr) {
+    return arr.filter((x, i) => x.length === 4)
 }
-
+console.log(friendOrFOe(["Ryan", "Kieran", "Jason", "Yous"]))
