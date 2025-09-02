@@ -197,3 +197,24 @@
 // If a = [1, 2] and b = [1], the result should be [2].
 
 // If a = [1, 2, 2, 2, 3] and b = [2], the result should be [1, 3].
+// NOT FINISHED /////////
+
+// Given an array of integers your solution should find the smallest integer.
+
+// For example:
+
+// Given [34, 15, 88, 2] your solution will return 2
+// Given [34, -345, -1, 100] your solution will return -345
+// You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+function smallestNumber(arr) {
+    let sum = arr[0]
+    arr.forEach((x, i) => {
+        if (x < sum) {
+            sum = x
+        }
+    });
+    return sum
+}
+
+console.log(smallestNumber([30, 20, 10, 5]))
