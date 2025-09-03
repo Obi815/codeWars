@@ -100,13 +100,13 @@
 // "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
 
 
-// function reverse(sentence) {
-//     return sentence.split('').map(function (word) {
-//         return word.split('').reverse().join('');
-//     }).join('');
-// }
+function reverse(sentence) {
+    return sentence.split('').map(function (word) {
+        return word.split('').reverse().join('');
+    }).join('');
+}
 
-// console.log(reverse('!dlrow olleh'))
+console.log(reverse('!dlrow olleh'))
 
 
 //// NOT FINISHED ////
@@ -207,14 +207,16 @@
 // Given [34, -345, -1, 100] your solution will return -345
 // You can assume, for the purpose of this kata, that the supplied array will not be empty.
 
-function smallestNumber(arr) {
-    let sum = arr[0]
-    arr.forEach((x, i) => {
-        if (x < sum) {
-            sum = x
-        }
-    });
-    return sum
-}
+// function smallestNumber(arr) {
+//     let sum = arr[0]
+//     arr.forEach((x, i) => {
+//         if (x < sum) {
+//             sum = x
+//         }
+//     });
+//     return sum
+// }
 
-console.log(smallestNumber([30, 20, 10, 5]))
+// console.log(smallestNumber([30, 20, 10, 5]))
+
+// COMPLETED///////////
