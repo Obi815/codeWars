@@ -100,13 +100,13 @@
 // "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
 
 
-function reverse(sentence) {
-    return sentence.split('').map(function (word) {
-        return word.split('').reverse().join('');
-    }).join('');
-}
+// function reverse(sentence) {
+//     return sentence.split('').map(function (word) {
+//         return word.split('').reverse().join('');
+//     }).join('');
+// }
 
-console.log(reverse('!dlrow olleh'))
+// console.log(reverse('!dlrow olleh'))
 
 
 //// NOT FINISHED ////
