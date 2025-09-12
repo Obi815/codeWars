@@ -220,4 +220,60 @@
 // console.log(smallestNumber([30, 20, 10, 5]))
 
 // COMPLETED///////////
+// Given a random non-negative number, 
+// you have to return the digits of this number 
+// within an array in reverse order.
 
+// Example (Input => Output):
+// 35231 => [1,3,2,5,3]
+// 0     => [0]
+
+// function digitize() {
+//     return String(n).split('').map(Number).reverse();
+// }
+// String(n) converts number into a string
+// split('') splits every character in string puts it in new array
+// map(Number) converts string back into numbers & creates new array
+// reverse() reverses the order
+// ////////////// Try AGAIN ////////
+
+
+// A Narcissistic Number (or Armstrong Number) is a positive number which is the sum of its own digits, 
+// each raised to the power of the number of digits in a given base. 
+// In this Kata, we will restrict ourselves to decimal (base 10).
+
+// For example, take 153 (3 digits), which is narcissistic:
+
+//     1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+// and 1652 (4 digits), which isn't:
+
+//     1^4 + 6^4 + 5^4 + 2^4 = 1 + 1296 + 625 + 16 = 1938
+// The Challenge:
+
+// Your code must return true or false (not 'true' and 'false') 
+// depending upon whether the given number is a Narcissistic number in base 10.
+
+// This may be True and False in your language, e.g. PHP.
+
+// Error checking for text strings or other invalid inputs is not required, 
+// only valid positive non-zero integers will be passed into the function.
+
+// function narcissistic(value) {
+//     return String(value).split('').map(Number)
+// }
+
+// let newNumber = 0
+// narcissistic.forEach((x, i) => {
+//     newNumber += Math.pow(x, narcissistic[narcissistic.length])
+// });
+
+// newNumber === value ? 'True' : 'False'
+
+// console.log(newNumber)
+
+
+function checkString(string) {
+    return string.charAt(string.length - 1) === '?' ? string : `${string}?`
+}
+
+console.log(checkString('hello  world?'))
