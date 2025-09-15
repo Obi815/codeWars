@@ -272,8 +272,18 @@
 // console.log(newNumber)
 
 
-function checkString(string) {
-    return string.charAt(string.length - 1) === '?' ? string : `${string}?`
+// function checkString(string) {
+//     return string.charAt(string.length - 1) === '?' ? string : `${string}?`
+// }
+
+// console.log(checkString('hello '))
+function grader(score) {
+    if (score > 1 || score < 0.6) return 'F';
+    else if (score >= 0.9) return 'A';
+    else if (score >= 0.8) return 'B';
+    else if (score >= 0.7) return 'C';
+    else if (score >= 0.6) return 'D';
 }
 
-console.log(checkString('hello  world?'))
+
+console.log(grader(1.1))
