@@ -277,13 +277,39 @@
 // }
 
 // console.log(checkString('hello '))
-function grader(score) {
-    if (score > 1 || score < 0.6) return 'F';
-    else if (score >= 0.9) return 'A';
-    else if (score >= 0.8) return 'B';
-    else if (score >= 0.7) return 'C';
-    else if (score >= 0.6) return 'D';
+// function grader(score) {
+//     if (score > 1 || score < 0.6) return 'F';
+//     else if (score >= 0.9) return 'A';
+//     else if (score >= 0.8) return 'B';
+//     else if (score >= 0.7) return 'C';
+//     else if (score >= 0.6) return 'D';
+// }
+
+
+// console.log(grader(1.1))
+// ////// Finished/////
+
+// Create a method to see whether the string is ALL CAPS.
+
+// Examples (input -> output)
+// "c" -> False
+// "C" -> True
+// "hello I AM DONALD" -> False
+// "HELLO I AM DONALD" -> True
+// "ACSKLDFJSgSKLDFJSKLDFJ" -> False
+// "ACSKLDFJSGSKLDFJSKLDFJ" -> True
+// In this Kata, a string is said to be in
+//  ALL CAPS whenever it does not contain any lowercase 
+//  letter so any string containing no letters at all is 
+//  trivially considered to be in ALL CAPS.
+
+// String.prototype.isUpperCase = function (str) {
+//     return /^[A-Z]*$/.test(str)
+// }
+
+function removeEveryOther(arr) {
+    //your code here
+    return arr.splice([1, 1])
 }
 
-
-console.log(grader(1.1))
+console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']))
