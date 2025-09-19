@@ -307,9 +307,23 @@
 //     return /^[A-Z]*$/.test(str)
 // }
 
-function removeEveryOther(arr) {
-    //your code here
-    return arr.splice([1, 1])
+// function removeEveryOther(arr) {
+//     //your code here
+//     return arr.splice([1, 1])
+// }
+
+// console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']))
+
+
+function countSheeps(sheepArray) {
+    // TODO
+    return sheepArray.filter(sheep => sheep === true).length
+
 }
 
-console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']))
+console.log(countSheeps([true, true, true, false,
+    true, true, true, true,
+    true, false, true, false,
+    true, false, false, true,
+    true, true, true, true,
+    false, false, true, true]))
