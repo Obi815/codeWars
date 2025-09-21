@@ -32,14 +32,14 @@
 
 //                                                              Simpler Way to do it ////////////
 
-function sumMul(n, m) {
-    if (n >= m) return "INVALID";
+// function sumMul(n, m) {
+//     if (n >= m) return "INVALID";
 
-    var sum = 0;
-    for (var i = n; i < m; i += n) {
-        sum += i;
-    }
-    return sum;
-}
+//     var sum = 0;
+//     for (var i = n; i < m; i += n) {
+//         sum += i;
+//     }
+//     return sum;
+// }
 
 
