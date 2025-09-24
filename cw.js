@@ -11,6 +11,7 @@
 // sumMul(4, 123) ==> 4 + 8 + 12 + ... = 1860
 // sumMul(4, -7) ==> "INVALID"
 
+
 // find all numbers divisible x up to y
 // add all those numbers up excluding y
 // return value
@@ -41,5 +42,41 @@
 //     }
 //     return sum;
 // }
+//////////////////////      COMPLETED //////////////////////////
 
+////////////////////////                NUMBER 2 ////////////////////
+
+
+// Given a random non-negative number, 
+// you have to return the digits of this number within an array in reverse order.
+
+// Example (Input => Output):
+// 35231 => [1,3,2,5,3]
+// 0     => [0]
+
+// function digitize(n) {
+//     return String(n).split('').map(Number).reverse()
+// }
+
+// console.log(digitize([2345960]))
+
+//Create a street fighter constructor that makes fighting game characters with 4 properties and 3 methods
+function StreetFighter(fightJump, fightCrouch, fightKick, fightPunch) {
+    this.jump = fightJump
+    this.crouch = fightCrouch
+    this.kick = fightKick
+    this.punch = fightPunch
+    this.slogan = function () {
+        console.log(`You can't handle my ${this.punch}`)
+    }
+    this.wind = function () {
+        alert('Haha')
+    }
+
+    this.dash = function () {
+        console.log('Whoop Missed Me!')
+    }
+}
+
+let ryu = new StreetFighter('high', 'low', 'body', 'haddduuuken')
 
