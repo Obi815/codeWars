@@ -1,4 +1,4 @@
-/////////////////////////////       Object Literal ///////////////
+/////////////////////////////               Object Literal ///////////////
 // const circle = { // <---- Object   : This is Object literal 
 //     radius: 1, // <--- properties           
 //     location: { // <--- properties                      
@@ -13,7 +13,7 @@
 // circle.draw();
 
 
-//                              Factory Function 
+//                                   Factory Function 
 // function createCircle(radius) {
 //     return { // <---- Object   : This is Object literal 
 //         radius, // <--- properties           
@@ -27,7 +27,7 @@
 // circle.draw()
 
 
-//                      Constructor Function 
+//                              Constructor Function 
 
 // function Circle(radius) {  // Circle with capital "C" to let us know it is a Constructor Function
 //     this.radius = radius
@@ -54,6 +54,28 @@
 // increase(obj)
 // console.log(obj)
 
+
+//                  Adding to the object 
+
+// function Circle(radius) {  // Circle with capital "C" to let us know it is a Constructor Function
+//     this.radius = radius
+//     this.draw = function () {
+//         console.log('draw')
+//     }
+// }
+
+// const circle = new Circle(10)
+
+// circle.location = { x: 1 }; // dot notation
+// circle['location'] = { x: 1 } // bracket notation
+
+// // how to delete properties 
+// delete circle.location// dot notation
+// delete circle['location']// bracket notation
+
+
+
+
 function Circle(radius) {  // Circle with capital "C" to let us know it is a Constructor Function
     this.radius = radius
     this.draw = function () {
@@ -62,3 +84,11 @@ function Circle(radius) {  // Circle with capital "C" to let us know it is a Con
 }
 
 const circle = new Circle(10)
+
+for (let key in circle) {
+    if (typeof circle[key] !== 'function')
+        console.log(key, circle[key])
+}
+
+const keys = Object.keys(circle);
+console.log(keys)
