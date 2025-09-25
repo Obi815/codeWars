@@ -29,12 +29,12 @@
 
 //                      Constructor Function 
 
-function Circle(radius) {  // Circle with capital "C" to let us know it is a Constructor Function
-    this.radius = radius
-    this.draw = function () {
-        console.log('draw')
-    }
-}
+// function Circle(radius) {  // Circle with capital "C" to let us know it is a Constructor Function
+//     this.radius = radius
+//     this.draw = function () {
+//         console.log('draw')
+//     }
+// }
 
 // Circle.call({}, 1); //Different way to call the function
 // Circle.apply({}, [1, 2, 3]); // if you wanted to add an array as a parameter
@@ -45,7 +45,20 @@ function Circle(radius) {  // Circle with capital "C" to let us know it is a Con
 // // then will set 'this' to point to that object
 
 
-let x = { value: 10 };
-let y = x;
+////////// Primitive and ??? 
+// let obj = { value: 10 }
+// function increase(obj) {
+//     obj.value++;
+// }
 
-x.value = 20
+// increase(obj)
+// console.log(obj)
+
+function Circle(radius) {  // Circle with capital "C" to let us know it is a Constructor Function
+    this.radius = radius
+    this.draw = function () {
+        console.log('draw')
+    }
+}
+
+const circle = new Circle(10)
