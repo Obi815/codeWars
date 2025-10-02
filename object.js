@@ -76,19 +76,19 @@
 
 
 
-function Circle(radius) {  // Circle with capital "C" to let us know it is a Constructor Function
-    this.radius = radius
-    this.draw = function () {
-        console.log('draw')
-    }
-}
+// function Circle(radius) {  // Circle with capital "C" to let us know it is a Constructor Function
+//     this.radius = radius
+//     this.draw = function () {
+//         console.log('draw')
+//     }
+// }
 
-const circle = new Circle(10)
+// const circle = new Circle(10)
 
-for (let key in circle) {
-    if (typeof circle[key] !== 'function')
-        console.log(key, circle[key])
-}
+// for (let key in circle) {
+//     if (typeof circle[key] !== 'function')
+//         console.log(key, circle[key])
+// }
 
-const keys = Object.keys(circle);
-console.log(keys)
+// const keys = Object.keys(circle);
+// console.log(keys)
