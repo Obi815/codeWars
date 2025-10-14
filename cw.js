@@ -76,6 +76,20 @@
 // ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" 
 // Note: In COBOL, it should return "found the needle at position 6"
 
-function findNeedle(haystack) {
-    // your code here
-}
+// function findNeedle(haystack) {
+//     // your code here
+//     return `found the needle at position ${haystack.indexOf("needle")}`
+// }
+
+// console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
+
+// Learn this code as well. 
+// const findNeedle = haystack => `found the needle at position ${haystack.indexOf('needle')}`;
+
+// Explanation:
+// findNeedle is the function name
+// haystack is the parameter                    
+// => is the arrow function syntax that also returns the value
+// haystack.indexOf('needle') finds the index of 'needle' in the haystack array
+
+//////////////////////      COMPLETED //////////////////////////
