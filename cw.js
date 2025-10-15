@@ -114,7 +114,39 @@
 
 // LEARN THIS CODE AS WELL
 // let howManyLightsabersDoYouOwn = name => name === 'Zach' ? 18 : 0;
+
+// Explanation:
 // howManyLightsabersDoYouOwn() is function name
 // name is the parameter
 // => is the arrow function syntax that also returns the value
 // name === 'Zach' ? 18 : 0 is a ternary operator that checks if name is equal to 'Zach'. If true, it returns 18, otherwise it returns 0.
+
+//////////////////////      COMPLETED //////////////////////////
+
+/////////////////////////                NUMBER 5 ////////////////////
+// In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+// Examples
+// highAndLow("1 2 3 4 5"); // return "5 1"
+// highAndLow("1 2 -3 4 5"); // return "5 -3"
+// highAndLow("1 9 3 4 -5"); // return "9 -5"
+// Notes
+// All numbers are valid Int32, no need to validate them.
+// There will always be at least one number in the input string.
+// Output string must be two numbers separated by a single space, and highest number is first.
+
+function highAndLow(numbers) {
+    let numArr = numbers.split(' ').map(Number);
+    numArr.sort((a, b) => b - a)
+    return `${numArr[0]} ${numArr[numArr.length - 1]}`
+}
+
+// explanation:
+// highAndLow is the function name
+// numbers is the parameter
+// split(' ') splits the string into an array of substrings based on spaces
+// map(Number) converts each substring into a number
+// sort((a, b) => b - a) sorts the array in descending order
+// `${numArr[0]} ${numArr[numArr.length - 1]}` uses template literals to return the highest and lowest numbers as a string
+
+
