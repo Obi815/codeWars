@@ -135,11 +135,11 @@
 // There will always be at least one number in the input string.
 // Output string must be two numbers separated by a single space, and highest number is first.
 
-function highAndLow(numbers) {
-    let numArr = numbers.split(' ').map(Number);
-    numArr.sort((a, b) => b - a)
-    return `${numArr[0]} ${numArr[numArr.length - 1]}`
-}
+// function highAndLow(numbers) {
+//     let numArr = numbers.split(' ').map(Number);
+//     numArr.sort((a, b) => b - a)
+//     return `${numArr[0]} ${numArr[numArr.length - 1]}`
+// }
 
 // explanation:
 // highAndLow is the function name
@@ -148,5 +148,51 @@ function highAndLow(numbers) {
 // map(Number) converts each substring into a number
 // sort((a, b) => b - a) sorts the array in descending order
 // `${numArr[0]} ${numArr[numArr.length - 1]}` uses template literals to return the highest and lowest numbers as a string
+
+///////////////////////    COMPLETED //////////////////////////
+
+/////////////////////////                NUMBER 6 ////////////////////
+// There was a test in your class and you passed it. Congratulations!
+
+// But you're an ambitious person. You want to know if you're better than the average student in your class.
+
+// You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
+// Return true if you're better, else false!
+
+// Note:
+// Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
+
+function betterThanAverage(classPoints, yourPoints) {
+    // Your code here
+    let classTotal = 0
+
+    classPoints.forEach((x, i) => {
+        classTotal += x
+    });
+
+    let classAvg = classTotal / classPoints.length
+
+    return yourPoints > classAvg ? true : false
+}
+// Explanation:
+// betterThanAverage is the function name
+// classPoints is the parameter representing an array of class point scores
+// yourPoints is the parameter representing your score
+// forEach((x, i) => { classTotal += x }) iterates through each score in classPoints and adds it to classTotal
+// classAvg calculates the average score of the class
+// return yourPoints > classAvg ? true : false uses a ternary operator to return true if yourPoints is greater than classAvg, otherwise returns false
+
+// LEARN THIS CODE AS WELL
+// function betterThanAverage(classPoints, yourPoints) {
+//     return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+//   }
+// Explanation:
+// reduce((a, b) => a + b, 0) sums up all the scores in classPoints starting from an initial value of 0
+// classPoints.length gets the number of scores in the classPoints array
+// yourPoints > ... compares your score to the calculated average
+// This code is more concise and achieves the same result as the previous implementation.
+///////////////////////    COMPLETED //////////////////////////
+
 
 
