@@ -83,7 +83,7 @@
 
 // console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
 
-// Learn this code as well. 
+//                  LEARN THIS CODE AS WELL
 // const findNeedle = haystack => `found the needle at position ${haystack.indexOf('needle')}`;
 
 // Explanation:
@@ -93,3 +93,28 @@
 // haystack.indexOf('needle') finds the index of 'needle' in the haystack array
 
 //////////////////////      COMPLETED //////////////////////////
+
+/////////////////////////                NUMBER 4 ////////////////////
+// Inspired by the development team at Vooza, write the function that
+
+// accepts the name of a programmer, and
+// returns the number of lightsabers owned by that person.
+// The only person who owns lightsabers is Zach, by the way. He owns 18, which is an awesome number of lightsabers. Anyone else owns 0.
+
+// Note: your function should have a default parameter.
+
+// For example(Input --> Output):
+
+// "anyone else" --> 0
+// "Zach" --> 18
+
+// function howManyLightsabersDoYouOwn(name) {
+//     return name === 'Zack' ? 18 : 0
+// }
+
+// LEARN THIS CODE AS WELL
+// let howManyLightsabersDoYouOwn = name => name === 'Zach' ? 18 : 0;
+// howManyLightsabersDoYouOwn() is function name
+// name is the parameter
+// => is the arrow function syntax that also returns the value
+// name === 'Zach' ? 18 : 0 is a ternary operator that checks if name is equal to 'Zach'. If true, it returns 18, otherwise it returns 0.
