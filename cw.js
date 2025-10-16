@@ -44,6 +44,12 @@
 // }
 //////////////////////      COMPLETED //////////////////////////
 
+
+
+
+
+
+
 ////////////////////////                NUMBER 2 ////////////////////
 
 
@@ -58,9 +64,20 @@
 //     return String(n).split('').map(Number).reverse()
 // }
 
-// console.log(digitize([2345960]))
+// Explanation:
+// digitize is the function name
+// n is the parameter representing the input number
+// String(n) converts the number to a string
+// split('') splits the string into an array of individual characters
+// map(Number) converts each character back to a number
+// reverse() reverses the order of the array elements
 
 //////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
 
 /////////////////////////                NUMBER 3 ////////////////////
 // Can you find the needle in the haystack?
@@ -94,6 +111,11 @@
 
 //////////////////////      COMPLETED //////////////////////////
 
+
+
+
+
+
 /////////////////////////                NUMBER 4 ////////////////////
 // Inspired by the development team at Vooza, write the function that
 
@@ -123,6 +145,10 @@
 
 //////////////////////      COMPLETED //////////////////////////
 
+
+
+
+
 /////////////////////////                NUMBER 5 ////////////////////
 // In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
@@ -150,6 +176,9 @@
 // `${numArr[0]} ${numArr[numArr.length - 1]}` uses template literals to return the highest and lowest numbers as a string
 
 ///////////////////////    COMPLETED //////////////////////////
+
+
+
 
 /////////////////////////                NUMBER 6 ////////////////////
 // There was a test in your class and you passed it. Congratulations!
@@ -194,6 +223,11 @@
 // This code is more concise and achieves the same result as the previous implementation.
 ///////////////////////    COMPLETED //////////////////////////
 
+
+
+
+
+
 /////////////////////////                NUMBER 7 ////////////////////
 // Nathan loves cycling.
 
@@ -219,6 +253,59 @@
 // Math.floor(time * 0.5) calculates the litres of water Nathan will drink and rounds it down to the nearest whole number
 // : 0 returns 0 if time is not greater than 0
 /////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+/////////////////////////                NUMBER 8 ////////////////////
+
+// You ask a small girl "How old are you?" She always says "x years old", where x is a random number between 0 and 9.
+
+// Write a program that returns the girl's age (0-9) as an integer.
+
+// Assume the test input string is always a valid string. For example, 
+// the test input may be "1 year old" or "5 years old". The first character in the string is always a number.
+
+// function getAge(inputString) {
+//     return parseInt(inputString)
+// }
+
+// let getAge = inputString => parseInt(inputString)
+
+// Explanation:
+// getAge is the function name
+// inputString is the parameter representing the input string
+// parseInt(inputString) converts the first character of the input string to an integer and returns it
+/////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+/////////////////////////                NUMBER 9 ////////////////////
+// Write a function that merges two sorted arrays into a single one. 
+// The arrays only contain integers. Also, the final outcome must be sorted and not have any duplicate.
+
+function mergeArrays(a, b) {
+    // your code here
+    let mergedArr = [...new Set([...a, ...b])]
+    return mergedArr.sort((a, b) => a - b)
+}
+
+// Explanation:
+// mergeArrays is the function name
+// a and b are the parameters representing the two input arrays
+// [...a, ...b] uses the spread operator to combine both arrays into one
+//      Example:
+//      let a = [1, 2, 3];
+//      let b = [3, 4, 5];
+//      console.log([...a, ...b]); // Output: [1, 2, 3, 3, 4, 5]
+
+// new Set(...) creates a Set object that automatically removes duplicate values
+// ...and ...b are spread into the Set to ensure all elements from both arrays are included
+// [...new Set(...)] converts the Set back into an array
+// mergedArr.sort((a, b) => a - b) sorts the merged array in ascending order
 
 
 
