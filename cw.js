@@ -287,11 +287,11 @@
 // Write a function that merges two sorted arrays into a single one. 
 // The arrays only contain integers. Also, the final outcome must be sorted and not have any duplicate.
 
-function mergeArrays(a, b) {
-    // your code here
-    let mergedArr = [...new Set([...a, ...b])]
-    return mergedArr.sort((a, b) => a - b)
-}
+// function mergeArrays(a, b) {
+//     // your code here
+//     let mergedArr = [...new Set([...a, ...b])]
+//     return mergedArr.sort((a, b) => a - b)
+// }
 
 // Explanation:
 // mergeArrays is the function name
