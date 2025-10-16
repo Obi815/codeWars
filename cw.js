@@ -163,18 +163,18 @@
 // Note:
 // Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
 
-function betterThanAverage(classPoints, yourPoints) {
-    // Your code here
-    let classTotal = 0
+// function betterThanAverage(classPoints, yourPoints) {
+//     // Your code here
+//     let classTotal = 0
 
-    classPoints.forEach((x, i) => {
-        classTotal += x
-    });
+//     classPoints.forEach((x, i) => {
+//         classTotal += x
+//     });
 
-    let classAvg = classTotal / classPoints.length
+//     let classAvg = classTotal / classPoints.length
 
-    return yourPoints > classAvg ? true : false
-}
+//     return yourPoints > classAvg ? true : false
+// }
 // Explanation:
 // betterThanAverage is the function name
 // classPoints is the parameter representing an array of class point scores
@@ -193,6 +193,32 @@ function betterThanAverage(classPoints, yourPoints) {
 // yourPoints > ... compares your score to the calculated average
 // This code is more concise and achieves the same result as the previous implementation.
 ///////////////////////    COMPLETED //////////////////////////
+
+/////////////////////////                NUMBER 7 ////////////////////
+// Nathan loves cycling.
+
+// Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+
+// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded down.
+
+// For example:
+
+// time = 3 ----> litres = 1
+
+// time = 6.7---> litres = 3
+
+// time = 11.8--> litres = 5
+
+// let litres = time => time > 0 ? Math.floor(time * 0.5) : 0
+
+// Explanation:
+// litres is the function name
+// time is the parameter representing the time in hours
+// => is the arrow function syntax that also returns the value
+// time > 0 ? is the time is greater than 0 check
+// Math.floor(time * 0.5) calculates the litres of water Nathan will drink and rounds it down to the nearest whole number
+// : 0 returns 0 if time is not greater than 0
+/////////////////////////      COMPLETED //////////////////////////
 
 
 
