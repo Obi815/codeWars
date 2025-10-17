@@ -307,5 +307,30 @@
 // [...new Set(...)] converts the Set back into an array
 // mergedArr.sort((a, b) => a - b) sorts the merged array in ascending order
 
+////////////////////////      COMPLETED //////////////////////////
 
+
+
+
+
+/////////////////////////                NUMBER 10 ////////////////////
+// Create a function that takes string
+// Print the reverse of that string to the console
+// function reverseString(str) {
+//     return str.split('').reverse().join('')
+// }
+
+// Explanation:
+// reverseString is the function name
+// str is the parameter representing the input string
+// split('') splits the string into an array of individual characters
+// reverse() reverses the order of the array elements
+// join('') joins the array elements back into a single string
+
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+/////////////////////////                NUMBER 11 ////////////////////
 
