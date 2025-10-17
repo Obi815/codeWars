@@ -42,6 +42,16 @@
 //     }
 //     return sum;
 // }
+
+// Explanation:
+// sumMul is the function name
+// n is the parameter representing the multiple
+// m is the parameter representing the upper limit
+// if (n >= m) return "INVALID"; checks if n is greater than or equal to m and returns "INVALID" if true
+// for (let i = n; i < m; i += n) iterates through numbers starting from n up to m, incrementing by n each time
+// i+= n adds n to i in each iteration
+// sum += i adds the current value of i to sum
+
 //////////////////////      COMPLETED //////////////////////////
 
 
@@ -333,4 +343,37 @@
 
 
 /////////////////////////                NUMBER 11 ////////////////////
+
+// Create an array of numbers. Sum all of the numbers. Alert the sum (can you forEach or .reduce())
+
+// .reduce() Method 
+
+// let numbers = [10, 20, 30, 40]
+// let sum = numbers.reduce((acc, curr) => (acc + curr), 0)
+// alert(sum)
+
+// Explanation:
+// numbers is an array containing the numbers to be summed
+// reduce((acc, curr) => (acc + curr), 0) iterates through the array, summing the elements starting from an initial value of 0
+// acc represents the accumulated sum
+// curr represents the current element being processed
+// alert(sum) displays the sum in an alert dialog
+
+// .forEach() Method
+
+// let numbers = [10, 20, 30, 40]
+// let sum = 0
+// numbers.forEach(num => { 
+//     sum += num
+// })
+// alert(sum)
+
+// Explanation:
+// numbers is an array containing the numbers to be summed
+// sum is initialized to 0 to hold the total sum
+// forEach(num => { sum += num }) iterates through each number in the array and adds it to sum
+// num represents the current element being processed
+// alert(sum) displays the sum in an alert dialog
+////////////////////////      COMPLETED //////////////////////////
+
 
