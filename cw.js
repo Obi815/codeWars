@@ -368,13 +368,13 @@
 // })
 // alert(sum)
 
-Explanation:
-numbers is an array containing the numbers to be summed
-sum is initialized to 0 to hold the total sum
-forEach(num => { sum += num }) iterates through each number in the array and adds it to sum
-num represents the current element being processed
-alert(sum) displays the sum in an alert dialog
-//////////////////////      COMPLETED //////////////////////////
+// Explanation:
+// numbers is an array containing the numbers to be summed
+// sum is initialized to 0 to hold the total sum
+// forEach(num => { sum += num }) iterates through each number in the array and adds it to sum
+// num represents the current element being processed
+// alert(sum) displays the sum in an alert dialog
+// //////////////////////      COMPLETED //////////////////////////
 
 
 
