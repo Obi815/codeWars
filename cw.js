@@ -392,8 +392,97 @@
 // ghost = new Ghost();
 // ghost.color //=> "white" or "yellow" or "purple" or "red"
 
-function Ghost() {
-    const colors = ["white", "yellow", "purple", "red"];
-    this.color = colors[Math.floor(Math.random() * colors.length)];
-}
+// function Ghost() {
+//     const colors = ["white", "yellow", "purple", "red"];
+//     this.color = colors[Math.floor(Math.random() * colors.length)];
+// }
+
+// Explanation:
+// The constructor name is Ghost
+// colors is an array containing the possible colors for the ghost
+// this.color assigns a random color from the colors array to the ghost instance
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+////////////////////////                NUMBER 13 ////////////////////
+
+// Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
+// For example: month 2(February), is part of the first quarter; month 6(June), is part of the second quarter; and month 11(November), is part of the fourth quarter.
+//     Constraint:
+// 1 <= month <= 12
+
+// function quarterOf(month) {
+//     if (month >= 1 && month <= 3) {
+//         return 1
+//     } else if (month >= 4 && month <= 6) {
+//         return 2
+//     } else if (month >= 7 && month <= 9) {
+//         return 3
+//     } else if (month >= 10 && month <= 12) {
+//         return 4
+//     }
+// }
+
+// Different Way to do it:
+
+// const quarterOf = (month) => {
+//     return month < 4 ? 1 : month < 7 ? 2 : month < 10 ? 3 : 4;
+//   }
+
+// Explanation:
+// quarterOf is the function name
+// month is the parameter representing the month as an integer
+// The function checks the value of month and returns the corresponding quarter number based on the defined ranges
+
+// different Way to do it:
+
+// const quarterOf = month => Math.ceil(month / 3);
+
+// Explanation:
+// quarterOf is the function name
+// month is the parameter representing the month as an integer
+// Math.ceil does the rounding up to the nearest integer
+// month / 3 divides the month by 3 to determine the quarter
+
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+////////////////////////                NUMBER 14 ////////////////////
+// You get an array of numbers, return the sum of all of the positives ones.
+// Example
+// [1, -4, 7, 12] => 1 + 7 12 = 20
+
+// function positiveSum(arr) {
+//     let sum = 0
+//     arr.forEach(num => {
+//         if (num > 0) {
+//             sum += num
+//         }
+//     });
+//     return sum
+// }
+
+// Explanation:
+// positiveSum is the function name
+// arr is the parameter representing the array of numbers
+// forEach(num => { ... }) iterates through each number in the array
+// if (num > 0) checks if the current number is positive
+// sum += num adds the positive number to the sum
+
+// Different Way to do it:
+// function positiveSum(arr) {
+//     return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+//  }
+// Explanation:
+// positiveSum is the function name
+// arr is the parameter representing the array of numbers
+//reduce is used to accumulate the sum of positive numbers
+// a represents the accumulated sum
+// b represents the current number being processed
+//(b > 0 ? b : 0) adds b to the sum if it is positive, otherwise adds 0
+////////////////////////      COMPLETED //////////////////////////
 
