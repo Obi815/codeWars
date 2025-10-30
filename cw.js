@@ -486,3 +486,43 @@
 //(b > 0 ? b : 0) adds b to the sum if it is positive, otherwise adds 0
 ////////////////////////      COMPLETED //////////////////////////
 
+
+
+
+
+////////////////////////                NUMBER 15 ////////////////////
+// Given an array of integers.
+// Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 
+// 0 is neither positive nor negative.
+// If the input is an empty array or is null, return an empty array.
+
+// function countPositivesSumNegatives(input) {
+//     if (input == null || input.length === 0) {
+//         return []
+//     } else {
+//         let countPositives = 0
+//         let sumNegatives = 0
+
+//         input.forEach(num => {
+//             if (num > 0) {
+//                 countPositives++
+//             } else if (num < 0) {
+//                 sumNegatives += num
+//             }
+//         });
+
+//         return [countPositives, sumNegatives]
+//     }
+// }
+
+// function countPositivesSumNegatives(input) {
+//     return input && input.length ? [input.filter(p => p > 0).length, input.filter(n => n < 0).reduce((a, b) => a + b, 0)] : [];
+// }
+
+// Explanation:
+// countPositivesSumNegatives is the function name
+// input is the parameter representing the array of integers
+// return input && input.length ? checks if input is not null and has elements
+// filter(p => p > 0).length counts the positive numbers in the array
+// filter(n => n < 0).reduce((a, b) => a + b, 0) sums the negative numbers in the array
+
