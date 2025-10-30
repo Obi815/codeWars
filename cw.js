@@ -525,4 +525,49 @@
 // return input && input.length ? checks if input is not null and has elements
 // filter(p => p > 0).length counts the positive numbers in the array
 // filter(n => n < 0).reduce((a, b) => a + b, 0) sums the negative numbers in the array
+// : [] returns an empty array if input is null or empty
+////////////////////////      COMPLETED //////////////////////////
 
+
+
+////////////////////////                NUMBER 16 ////////////////////
+// You received a whatsup message from an unknown number. Could it be from that girl/boy with a foreign accent you met yesterday evening?
+
+// Write a simple function to check if the string contains the word hallo in different languages.
+
+// These are the languages of the possible people you met the night before:
+
+// hello - english
+// ciao - italian
+// salut - french
+// hallo - german
+// hola - spanish
+// ahoj - czech republic
+// czesc - polish
+// Notes
+
+// you can assume the input is a string.
+// to keep this a beginner exercise you don't need to check if the greeting is a subset of word (Hallowen can pass the test)
+// function should be case insensitive to pass the tests
+
+let word = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc']
+
+function validateHello(greetings) {
+    let lowerCaseGreeting = greetings.toLowerCase()
+
+    for (let i = 0; i < word.length; i++) {
+        if (lowerCaseGreeting.includes(word[i])) {
+            return true
+        }
+    }
+    return false
+}
+// Explanation:
+// validateHello is the function name
+// greetings is the parameter representing the input string
+// toLowerCase() converts the input string to lowercase for case-insensitive comparison
+// for loop iterates through the array of greetings in different languages
+// includes(word[i]) checks if the input string contains the current greeting
+// return true returns true if a greeting is found
+// return false returns false if no greetings are found
+////////////////////////      COMPLETED //////////////////////////
