@@ -91,11 +91,8 @@
 
 /////////////////////////                NUMBER 3 ////////////////////
 // Can you find the needle in the haystack?
-
 // Write a function findNeedle() that takes an array full of junk but containing one "needle"
-
 // After your function finds the needle it should return a message (as a string) that says:
-
 // "found the needle at position " plus the index it found the needle, so:
 
 // Example(Input --> Output)
@@ -104,7 +101,6 @@
 // Note: In COBOL, it should return "found the needle at position 6"
 
 // function findNeedle(haystack) {
-//     // your code here
 //     return `found the needle at position ${haystack.indexOf("needle")}`
 // }
 
@@ -550,18 +546,18 @@
 // to keep this a beginner exercise you don't need to check if the greeting is a subset of word (Hallowen can pass the test)
 // function should be case insensitive to pass the tests
 
-let word = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc']
+// let word = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc']
 
-function validateHello(greetings) {
-    let lowerCaseGreeting = greetings.toLowerCase()
+// function validateHello(greetings) {
+//     let lowerCaseGreeting = greetings.toLowerCase()
 
-    for (let i = 0; i < word.length; i++) {
-        if (lowerCaseGreeting.includes(word[i])) {
-            return true
-        }
-    }
-    return false
-}
+//     for (let i = 0; i < word.length; i++) {
+//         if (lowerCaseGreeting.includes(word[i])) {
+//             return true
+//         }
+//     }
+//     return false
+// }
 // Explanation:
 // validateHello is the function name
 // greetings is the parameter representing the input string
