@@ -567,3 +567,76 @@
 // return true returns true if a greeting is found
 // return false returns false if no greetings are found
 ////////////////////////      COMPLETED //////////////////////////
+
+
+////////////////////////                NUMBER 17 ////////////////////
+// Frog RIVER ONE
+// A small frog wants to get to the other side of a river. The frog is initially located on one bank of the river (position 0) and wants to get to the opposite bank (position X+1). Leaves fall from a tree onto the surface of the river.
+// You are given an array A consisting of N integers representing the falling leaves. A[K] represents the position where one leaf falls at time K, measured in seconds.
+// The goal is to find the earliest time when the frog can jump to the other side of the river. The frog can cross only when leaves appear at every position across the river from 1 to X (that is, we need to have at least one leaf at each position).
+// For example, you are given integer X = 5 and array A such that:
+// A[0] = 1
+// A[1] = 3
+// A[2] = 1
+// A[3] = 4
+// A[4] = 2
+// A[5] = 3
+// A[6] = 5
+// A[7] = 4
+// In second 6, a leaf falls into position 5. This is the earliest time when leaves appear in every position across the river from 1 to 5.
+// Write a function:
+
+// function frogRiverOne(X, A) {
+//     let positions = new Set()
+//     for (let i = 0; i < A.length; i++) {
+//         positions.add(A[i])
+//         if (positions.size === X) {
+//             return i
+//         }
+//     }
+//     return -1
+// }
+
+// Explanation:
+// frogRiverOne is the function name
+// X is the parameter representing the target position across the river
+// A is the parameter representing the array of falling leaves
+// positions is a Set to track unique positions where leaves have fallen
+// new Set() creates a new Set object that automatically handles duplicates
+// for loop iterates through the array A
+// positions.add(A[i]) adds the position of the falling leaf to the Set
+// if (positions.size === X) checks if all positions from 1 to X have leaves
+// return i returns the earliest time (index) when the frog can cross
+// return -1 returns -1 if the frog cannot cross
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+////////////////////////                NUMBER 18 ////////////////////
+
+// Write a function that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
+// For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
+
+// function solution(A) {
+//     let numSet = new Set(A)
+//     let smallestMissing = 1
+//     while (numSet.has(smallestMissing)) {
+//         smallestMissing++
+//     }
+//     return smallestMissing
+// }
+// Explanation:
+// solution is the function name
+// A is the parameter representing the array of integers
+// numSet is a Set to track unique integers in the array    
+// new Set(A) creates a new Set object containing the elements of array A
+// smallestMissing is initialized to 1 to find the smallest missing positive integer
+// while (numSet.has(smallestMissing)) checks if smallestMissing is in the Set
+// smallestMissing++ increments smallestMissing to check the next integer
+// return smallestMissing returns the smallest missing positive integer
+
+///////////////////////      COMPLETED //////////////////////////
+
+
+
+
