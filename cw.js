@@ -698,4 +698,35 @@
 
 
 ////////////////////////                NUMBER 21 ////////////////////
+// You have an array A of integers.
+// Split it at every position P (1 ≤ P < N) into two parts:
+
+// function solution(A) {
+//     let totalSum = A.reduce((acc, curr) => acc + curr, 0);
+//     let leftSum = 0;
+//     let minDiff = Infinity;
+//     for (let i = 0; i < A.length - 1; i++) {
+//         leftSum += A[i];
+//         let rightSum = totalSum - leftSum;
+//         let diff = Math.abs(leftSum - rightSum);
+//         if (diff < minDiff) {
+//             minDiff = diff;
+//         }
+//     }
+//     return minDiff;
+// }
+// Explanation:
+// solution is the function name
+// A is the parameter representing the array of integers
+// totalSum calculates the total sum of the array using reduce
+// leftSum initializes the sum of the left part of the array
+// minDiff initializes the minimum difference to Infinity
+// for loop iterates through the array up to the second-to-last element
+// leftSum += A[i]; adds the current element to the left sum
+// rightSum calculates the sum of the right part of the array
+// diff calculates the absolute difference between leftSum and rightSum
+// if (diff < minDiff) checks if the current difference is less than the minimum difference found so far
+// minDiff = diff; updates minDiff if a smaller difference is found
+// return minDiff returns the minimum difference found
+///////////////////////      COMPLETED //////////////////////////
 
