@@ -730,3 +730,32 @@
 // return minDiff returns the minimum difference found
 ///////////////////////      COMPLETED //////////////////////////
 
+
+
+
+
+////////////////////////                NUMBER 22 ////////////////////
+
+// Write a function that takes an array of numbers and returns an array of running sums.
+
+// function runningSum(nums) {
+//     let newArr = []
+//     let sum = 0
+//     for (let i = 0; i < nums.length; i++) {
+//         sum += nums[i]
+//         newArr.push(sum)
+//     }
+//     return newArr
+// }
+
+// Explanation:
+// runningSum is the function name
+// nums is the parameter representing the array of numbers
+// newArr initializes an empty array to store the running sums
+// sum initializes the sum to 0
+// for loop iterates through each number in the nums array
+// sum += nums[i] adds the current number to the sum
+// newArr.push(sum) adds the current sum to the newArr array
+// return newArr returns the array of running sums
+///////////////////////      COMPLETED //////////////////////////
+
