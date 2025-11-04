@@ -637,6 +637,21 @@
 
 ///////////////////////      COMPLETED //////////////////////////
 
+let cyclicRotation = (a, k) => {
+    if (a.length === 0) return a;
+    k = k % a.length; // Handle cases where k is greater than array length
+    return a.slice(-k).concat(a.slice(0, a.length - k));
+}
+// Explanation:
+// cyclicRotation is the function name
+// a is the parameter representing the array to be rotated
+// k is the parameter representing the number of rotations
+// if (a.length === 0) return a; checks if the array is empty and returns it as is
+// k = k % a.length; handles cases where k is greater than the array length
+// a.slice(-k) gets the last k elements of the array
+// a.slice(0, a.length - k) gets the elements from the start of the array up to the length minus k
+// concat() combines the two slices to form the rotated array
+///////////////////////      COMPLETED //////////////////////////
 
 
 
