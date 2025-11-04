@@ -672,12 +672,30 @@
 ////////////////////////                NUMBER 20 ////////////////////
 // Write a function that returns how many even numbers are in a given array of integers.
 
-function checkEven(arr) {
-    let count = 0
-    for (let num of arr) {
-        if (num % 2 === 0) {
-            count++
-        }
-    }
-    return count
-}
+// function checkEven(arr) {
+//     let count = 0
+//     for (let num of arr) {
+//         if (num % 2 === 0) {
+//             count++
+//         }
+//     }
+//     return count
+// }
+
+// Explanation:
+// checkEven is the function name
+// arr is the parameter representing the array of integers
+// count is initialized to 0 to keep track of the number of even integers
+// for (let num of arr) iterates through each number in the array
+// if (num % 2 === 0) checks if the current number is even
+// count++ increments the count if the number is even
+// return count returns the total count of even integers in the array
+///////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+
+////////////////////////                NUMBER 21 ////////////////////
+
