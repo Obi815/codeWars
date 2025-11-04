@@ -569,6 +569,10 @@
 ////////////////////////      COMPLETED //////////////////////////
 
 
+
+
+
+
 ////////////////////////                NUMBER 17 ////////////////////
 // Frog RIVER ONE
 // A small frog wants to get to the other side of a river. The frog is initially located on one bank of the river (position 0) and wants to get to the opposite bank (position X+1). Leaves fall from a tree onto the surface of the river.
@@ -612,6 +616,10 @@
 
 
 
+
+
+
+
 ////////////////////////                NUMBER 18 ////////////////////
 
 // Write a function that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
@@ -637,11 +645,16 @@
 
 ///////////////////////      COMPLETED //////////////////////////
 
-let cyclicRotation = (a, k) => {
-    if (a.length === 0) return a;
-    k = k % a.length; // Handle cases where k is greater than array length
-    return a.slice(-k).concat(a.slice(0, a.length - k));
-}
+
+
+
+////////////////////////                NUMBER 19 ////////////////////
+
+// let cyclicRotation = (a, k) => {
+//     if (a.length === 0) return a;
+//     k = k % a.length; // Handle cases where k is greater than array length
+//     return a.slice(-k).concat(a.slice(0, a.length - k));
+// }
 // Explanation:
 // cyclicRotation is the function name
 // a is the parameter representing the array to be rotated
@@ -655,3 +668,16 @@ let cyclicRotation = (a, k) => {
 
 
 
+
+////////////////////////                NUMBER 20 ////////////////////
+// Write a function that returns how many even numbers are in a given array of integers.
+
+function checkEven(arr) {
+    let count = 0
+    for (let num of arr) {
+        if (num % 2 === 0) {
+            count++
+        }
+    }
+    return count
+}
