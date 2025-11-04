@@ -759,3 +759,17 @@
 // return newArr returns the array of running sums
 ///////////////////////      COMPLETED //////////////////////////
 
+let solution = (A) => {
+    let totalSum = A.reduce((acc, curr) => acc + curr, 0);
+    let leftSum = 0;
+    let minDiff = Infinity;
+    for (let i = 0; i < A.length - 1; i++) {
+        leftSum += A[i];
+        let rightSum = totalSum - leftSum;
+        let diff = Math.abs(leftSum - rightSum)
+        if (diff < minDiff) {
+            minDiff = diff;
+        }
+    }
+    return minDiff;
+}
