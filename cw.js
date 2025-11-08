@@ -773,3 +773,8 @@
 //     }
 //     return minDiff;
 // }
+
+// ADD 
+// Sum without highest and lowest number
+
+// Filter out the geese
