@@ -94,8 +94,3 @@
 // console.log(keys)
 
 
-function reverse(arr) {
-    return arr.split('').sort((a, b) => (a - b)).map()
-}
-
-console.log(reverse(35231))
