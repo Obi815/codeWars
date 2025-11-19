@@ -574,3 +574,61 @@
 
 
 ////////////////////////                NUMBER 17 ////////////////////
+// We need a simple function that determines if a plural is needed or not. It should take a number, and return true if a plural should be used with that number or false if not. This would be useful when printing out a string such as 5 minutes, 14 apples, or 1 sun.
+
+// You only need to worry about english grammar rules for this kata, where anything that isn't singular (one of something), it is plural (not one of something).
+
+// All values will be positive integers or floats, or zero.
+
+// function plural(n) {
+//     return n !== 1
+// }
+
+// Explanation:
+// plural is the function name
+// n is the parameter representing the number
+// return n !== 1 checks if n is not equal to 1 and returns true if so, otherwise returns false
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+
+
+////////////////////////                NUMBER 18 ////////////////////
+// Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+// The highest or lowest element respectively is a single element at each edge, 
+// even if there are more than one with the same value. Mind the input validation.
+
+// Example
+// { 6, 2, 1, 8, 10 } => 16
+// { 1, 1, 11, 2, 3 } => 6
+// Input validation
+// If an empty value ( null, None, Nothing, nil etc. ) 
+// is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
+
+// function sumArray(array) {
+//     if (array == null || array.length <= 2) {
+//         return 0
+//     } else {
+//         let sortedArr = array.sort((a, b) => a - b)
+//         let sum = 0
+//         for (let i = 1; i < sortedArr.length - 1; i++) {
+//             sum += sortedArr[i]
+//         }
+//         return sum
+//     }
+// }
+
+// Explanation:
+// sumArray is the function name
+// array is the parameter representing the input array
+// if (array == null || array.length <= 2) checks if the array is null or has 2 or fewer elements and returns 0 if true
+// sort((a, b) => a - b) sorts the array in ascending order
+// for loop iterates through the sorted array, starting from the second element and ending at the second-to-last element
+// sum += sortedArr[i] adds each element in the specified range to the sum
+////////////////////////      COMPLETED //////////////////////////
+
+
+
