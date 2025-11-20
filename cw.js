@@ -649,10 +649,10 @@
 // The elements in the returned array should be in the same order as in the initial array passed to your function, 
 // albeit with the 'geese' removed. Note that all of the strings will be in the same case as those provided, and some elements may be repeated
 
-function gooseFilter(birds) {
-    const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-    return birds.filter(bird => !geese.includes(bird));
-}
+// function gooseFilter(birds) {
+//     const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+//     return birds.filter(bird => !geese.includes(bird));
+// }
 // Explanation: 
 // gooseFilter is the function name
 // birds is the parameter representing the input array of bird names
@@ -665,3 +665,42 @@ function gooseFilter(birds) {
 
 
 
+
+
+////////////////////////                NUMBER 20 ////////////////////
+// Your goal is to return multiplication table for number that is always an integer from 1 to 10.
+
+// For example, a multiplication table (string) for number == 5 looks like below:
+
+// 1 * 5 = 5
+// 2 * 5 = 10
+// 3 * 5 = 15
+// 4 * 5 = 20
+// 5 * 5 = 25
+// 6 * 5 = 30
+// 7 * 5 = 35
+// 8 * 5 = 40
+// 9 * 5 = 45
+// 10 * 5 = 50
+// P. S. You can use \n in string to jump to the next line.
+
+// Note: newlines should be added between rows, but there should be no trailing newline at the end. If you're unsure about the format, look at the sample tests.
+// function multiTable(number) {
+//     let result = ''
+//     for (let i = 1; i <= 10; i++) {
+//         result += `${i} * ${number} = ${i * number}`
+//         if (i < 10) {
+//             result += '\n'
+//         }
+//     }
+//     return result
+// }
+// Explanation:
+// multiTable is the function name
+// number is the parameter representing the input number
+// result is initialized as an empty string to hold the multiplication table
+// for loop iterates from 1 to 10
+// result += `${i} * ${number} = ${i * number}` appends the current multiplication line to the result string
+// if (i < 10) { result += '\n' } adds a newline character after each line except the last one
+// return result returns the final multiplication table string
+////////////////////////      COMPLETED //////////////////////////
