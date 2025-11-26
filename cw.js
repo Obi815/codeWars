@@ -740,6 +740,72 @@
 
 // Return your answer as a number.
 
-function sumMix(x) {
-    return x.reduce((s, n) => s + Number(n), 0)
-}
+// function sumMix(x) {
+//     return x.reduce((s, n) => s + Number(n), 0)
+// }
+// Explanation:
+// sumMix is the function name
+// x is the parameter representing the array of integers as strings and numbers
+// reduce((s, n) => s + Number(n), 0) iterates through the array, converting each element to a number and summing them up starting from an initial value of 0
+// s represents the accumulated sum
+// n represents the current element being processed
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+
+////////////////////////                NUMBER 23 ////////////////////
+// You take your son to the forest to see the monkeys. You know that there are a certain number there (n), 
+// but your son is too young to just appreciate the full number, he has to start counting them from 1.
+// As a good parent, you will sit and count with him. Given the number (n), 
+// populate an array with all numbers up to and including that number, but excluding zero.
+
+// function monkeyCount(n) {
+//     let arr = []
+//     for (let i = 1; i <= n; i++) {
+//         arr.push[i]
+//     }
+//     return arr
+// }
+// Explanation:
+// monkeyCount is the function name
+// n is the parameter representing the number of monkeys
+// arr is initialized as an empty array to hold the monkey counts
+// for loop iterates from 1 to n
+// arr.push(i) adds the current number to the arr array
+// return arr returns the final array of monkey counts
+
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+////////////////////////                NUMBER 24 ////////////////////
+// Create a function with two arguments that will return an array of the first n multiples of x.
+
+// Assume both the given number and the number of times to count will be positive numbers greater than 0.
+
+// Return the results as an array or list ( depending on language ).
+
+// Examples
+// x = 1, n = 10 --> [1,2,3,4,5,6,7,8,9,10]
+// x = 2, n = 5  --> [2,4,6,8,10]
+
+// function countBy(x, n) {
+//     var z = [];
+//     for (i = 1; i <= n; i++) {
+//         z.push(x * i);
+//     }
+//     return z;
+// }
+// Explanation:
+// countBy is the function name
+// x is the parameter representing the base number
+// n is the parameter representing the number of multiples to generate
+// z is initialized as an empty array to hold the multiples
+// for loop iterates from 1 to n
+// z.push(x * i) adds the current multiple of x to the z array
+// return z returns the final array of multiples
+////////////////////////      COMPLETED //////////////////////////
