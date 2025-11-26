@@ -704,3 +704,42 @@
 // if (i < 10) { result += '\n' } adds a newline character after each line except the last one
 // return result returns the final multiplication table string
 ////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+
+////////////////////////                NUMBER 21 ////////////////////
+// HELP! Jason can't find his textbook! It is two days before the test date,
+// and Jason's textbooks are all out of order! Help him sort a list (ArrayList in java) 
+// full of textbooks by subject, so he can study before the test.
+
+// The sorting should NOT be case sensitive
+
+// function sorter(textbooks) {
+//     return textbooks.sort((a, b) => a.toLowerCase() > b.toLowerCase() ? 1 : 
+//                                     a.toLowerCase() < b.toLowerCase() ? -1  : 0)
+//   }
+
+// Explanation:
+// sorter is the function name
+// textbooks is the parameter representing the array of textbook subjects
+// sort((a, b) => ...) sorts the textbooks array
+// a and b are the current elements being compared during sorting
+// toLowerCase() converts the subjects to lowercase for case-insensitive comparison
+// The ternary operator compares a and b and returns 1, -1, or 0 based on their order
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+////////////////////////                NUMBER 22 ////////////////////
+// Given an array of integers as 
+// strings and numbers, return the sum of the array values as if all were numbers.
+
+// Return your answer as a number.
+
+function sumMix(x) {
+    return x.reduce((s, n) => s + Number(n), 0)
+}
