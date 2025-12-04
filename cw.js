@@ -155,7 +155,7 @@
 
 
 
-/////////////////////////                NUMBER 5 ////////////////////
+/////////////////////////                NUMBER 5 -  HIGHEST AND LOWERST        ////////////////////
 // In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
 
 // Examples
@@ -685,6 +685,7 @@
 // P. S. You can use \n in string to jump to the next line.
 
 // Note: newlines should be added between rows, but there should be no trailing newline at the end. If you're unsure about the format, look at the sample tests.
+
 // function multiTable(number) {
 //     let result = ''
 //     for (let i = 1; i <= 10; i++) {
