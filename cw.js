@@ -236,7 +236,7 @@
 
 
 
-/////////////////////////                NUMBER 7 ////////////////////
+/////////////////////////                NUMBER 7   - KEEP HYDRATED    ////////////////////
 // Nathan loves cycling.
 
 // Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
