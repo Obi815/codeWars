@@ -60,7 +60,7 @@
 
 
 
-////////////////////////                NUMBER 2 ////////////////////
+////////////////////////                NUMBER 2 Convert number to reversed array of digits  ////////////////////
 
 
 // Given a random non-negative number, 
