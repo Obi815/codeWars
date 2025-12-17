@@ -399,13 +399,15 @@
 // The constructor name is Ghost
 // colors is an array containing the possible colors for the ghost
 // this.color assigns a random color from the colors array to the ghost instance
+// Math.random() generates a random number between 0 and 1
+// Math.floor(Math.random() * colors.length) generates a random index to select a color from the colors array
 ////////////////////////      COMPLETED //////////////////////////
 
 
 
 
 
-////////////////////////                NUMBER 13 ////////////////////
+////////////////////////                NUMBER 13 QUATER OF THE YEAR ////////////////////
 
 // Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
 // For example: month 2(February), is part of the first quarter; month 6(June), is part of the second quarter; and month 11(November), is part of the fourth quarter.
