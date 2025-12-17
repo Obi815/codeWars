@@ -266,7 +266,7 @@
 
 
 
-/////////////////////////                NUMBER 8 ////////////////////
+/////////////////////////                NUMBER 8   PARSE NICE INT FROM CHAR PROBLEM ////////////////////
 
 // You ask a small girl "How old are you?" She always says "x years old", where x is a random number between 0 and 9.
 
