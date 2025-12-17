@@ -321,7 +321,7 @@
 
 
 
-/////////////////////////                NUMBER 10 ////////////////////
+/////////////////////////                NUMBER 10  REVERSED STRINGS  ////////////////////
 // Create a function that takes string
 // Print the reverse of that string to the console
 // function reverseString(str) {
