@@ -95,9 +95,9 @@
 // After your function finds the needle it should return a message (as a string) that says:
 // "found the needle at position " plus the index it found the needle, so:
 
-// Example(Input --> Output)
+// Example(Input-- > Output)
 
-// ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" 
+// ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]-- > "found the needle at position 5"
 // Note: In COBOL, it should return "found the needle at position 6"
 
 // function findNeedle(haystack) {
@@ -122,7 +122,7 @@
 
 
 
-/////////////////////////                NUMBER 4 ////////////////////
+/////////////////////////                NUMBER 4  How many lightsabers do you own?////////////////////
 // Inspired by the development team at Vooza, write the function that
 
 // accepts the name of a programmer, and
@@ -451,7 +451,7 @@
 
 
 
-////////////////////////                NUMBER 14 ////////////////////
+////////////////////////                NUMBER 14 SUM OF POSITIVE ////////////////////
 // You get an array of numbers, return the sum of all of the positives ones.
 // Example
 // [1, -4, 7, 12] => 1 + 7 12 = 20
