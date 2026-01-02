@@ -33,15 +33,15 @@
 
 //                                                              Simpler Way to do it ////////////
 
-// function sumMul(n, m) {
-//     if (n >= m) return "INVALID";
+function sumMul(n, m) {
+    if (n >= m) return "INVALID";
 
-//     let sum = 0;
-//     for (let i = n; i < m; i += n) {
-//         sum += i;
-//     }
-//     return sum;
-// }
+    let sum = 0;
+    for (let i = n; i < m; i += n) {
+        sum += i;
+    }
+    return sum;
+}
 
 // Explanation:
 // sumMul is the function name
@@ -834,3 +834,49 @@
 // function spEng(sentence){
 //     return sentence.toLowerCase().includes('english')
 //   }
+
+// Explanation:
+// spEng is the function name
+// sentence is the parameter representing the input string
+// toLowerCase() converts the input string to lowercase for case-insensitive comparison
+// includes('english') checks if the input string contains the word 'english'
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+
+////////////////////////                NUMBER 26  Cat Dog Years  ////////////////////
+// I have a cat and a dog.
+
+// I got them at the same time as kitten/puppy. That was humanYears years ago.
+
+// Return their respective ages now as [humanYears,catYears,dogYears]
+
+// NOTES:
+// humanYears >= 1
+// humanYears are whole numbers only
+
+// Cat Years
+// 15 cat years for first year
+// +9 cat years for second year
+// +4 cat years for each year after that
+
+// Dog Years
+// 15 dog years for first year
+// +9 dog years for second year
+// +5 dog years for each year after that
+
+// var humanYearsCatYearsDogYears = function(y) {
+//     if (y == 1) return [1, 15, 15]
+//     if (y == 2) return [2, 24, 24]
+//     return [y, (y-2) * 4 + 24, (y-2) * 5 + 24]
+//   }
+
+// Explanation:
+// humanYearsCatYearsDogYears is the function name
+// y is the parameter representing the human years
+// The function checks the value of y and returns the corresponding 
+// ages in an array based on the defined rules for cat and dog years
+////////////////////////      COMPLETED //////////////////////////
