@@ -33,15 +33,15 @@
 
 //                                                              Simpler Way to do it ////////////
 
-function sumMul(n, m) {
-    if (n >= m) return "INVALID";
+// function sumMul(n, m) {
+//     if (n >= m) return "INVALID";
 
-    let sum = 0;
-    for (let i = n; i < m; i += n) {
-        sum += i;
-    }
-    return sum;
-}
+//     let sum = 0;
+//     for (let i = n; i < m; i += n) {
+//         sum += i;
+//     }
+//     return sum;
+// }
 
 // Explanation:
 // sumMul is the function name
