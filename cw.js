@@ -880,3 +880,8 @@
 // The function checks the value of y and returns the corresponding 
 // ages in an array based on the defined rules for cat and dog years
 ////////////////////////      COMPLETED //////////////////////////
+
+
+
+////////////////////////                NUMBER 27  Find the smallest integer in the array  ////////////////////
+going to work on a test for this computer
