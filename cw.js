@@ -909,3 +909,30 @@ function bandNameGenerator(str) {
     return str[0].toUpperCase() + str.slice(1).repeat(2)
   }
 }
+
+// Explanation:
+// bandNameGenerator is the function name
+// str is the parameter representing the input noun
+// str[0] accesses the first character of the string
+// str.slice(-1) accesses the last character of the string
+// if(str[0] != str.slice(-1)) checks if the first and last characters are different
+// 'The' + ' ' + str[0].toUpperCase() + str.slice(1) constructs the band name with "The" and capitalizes the first letter of the noun
+// str[0].toUpperCase() capitalizes the first letter of the noun
+// str.slice(1) gets the rest of the noun after the first letter
+// str[0].toUpperCase() + str.slice(1).repeat(2) constructs the band name by repeating the noun when the first and last letters are the same
+
+//Simple way to do it:
+function bandNameGenerator(str) {
+  return str.slice(0,1) == str.slice(-1) ? str.slice(0,1).toUpperCase() + 
+  str.slice(1) + str.slice(1) : "The " + str.slice(0,1).toUpperCase() + str.slice(1);
+}
+
+// Explanation:
+// bandNameGenerator is the function name
+// str is the parameter representing the input noun
+// str.slice(0,1) accesses the first character of the string
+// str.slice(-1) accesses the last character of the string
+// ? is the ternary operator that checks if the first and last characters are the same
+// str.slice(0,1).toUpperCase() + str.slice(1) + str.slice(1) constructs the band name by repeating the noun when the first and last letters are the same
+// "The " + str.slice(0,1).toUpperCase() + str.slice(1) constructs the band name with "The" and capitalizes the first letter of the noun when the first and last letters are different
+////////////////////////      COMPLETED //////////////////////////
