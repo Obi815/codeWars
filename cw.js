@@ -901,14 +901,14 @@
 // Complete the function that takes a noun as a string, 
 // and returns her preferred band name written as a string.
 
-function bandNameGenerator(str) {
-  if(str[0] != str.slice(-1)){
-    return 'The' + ' ' + str[0].toUpperCase() + str.slice(1)
-  }
-  else{
-    return str[0].toUpperCase() + str.slice(1).repeat(2)
-  }
-}
+// function bandNameGenerator(str) {
+//   if(str[0] != str.slice(-1)){
+//     return 'The' + ' ' + str[0].toUpperCase() + str.slice(1)
+//   }
+//   else{
+//     return str[0].toUpperCase() + str.slice(1).repeat(2)
+//   }
+// }
 
 // Explanation:
 // bandNameGenerator is the function name
@@ -922,10 +922,10 @@ function bandNameGenerator(str) {
 // str[0].toUpperCase() + str.slice(1).repeat(2) constructs the band name by repeating the noun when the first and last letters are the same
 
 //Simple way to do it:
-function bandNameGenerator(str) {
-  return str.slice(0,1) == str.slice(-1) ? str.slice(0,1).toUpperCase() + 
-  str.slice(1) + str.slice(1) : "The " + str.slice(0,1).toUpperCase() + str.slice(1);
-}
+// function bandNameGenerator(str) {
+//   return str.slice(0,1) == str.slice(-1) ? str.slice(0,1).toUpperCase() + 
+//   str.slice(1) + str.slice(1) : "The " + str.slice(0,1).toUpperCase() + str.slice(1);
+// }
 
 // Explanation:
 // bandNameGenerator is the function name
@@ -936,3 +936,45 @@ function bandNameGenerator(str) {
 // str.slice(0,1).toUpperCase() + str.slice(1) + str.slice(1) constructs the band name by repeating the noun when the first and last letters are the same
 // "The " + str.slice(0,1).toUpperCase() + str.slice(1) constructs the band name with "The" and capitalizes the first letter of the noun when the first and last letters are different
 ////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+////////////////////////                NUMBER 28  Double Trouble ////////////////////
+// Given an array of integers (x), and a target (t), 
+// you must find out if any two consecutive numbers in the array sum to t. If so, remove the second number.
+
+// Example:
+
+// x = [1, 2, 3, 4, 5]
+// t = 3
+
+// 1+2 = t, so remove 2. No other pairs = t, so rest of array remains:
+
+// [1, 3, 4, 5]
+
+// Work through the array from left to right.
+
+// Return the resulting array.
+
+function trouble(x, t){
+  for(var i=0; i<x.length; i++) {
+    if(x[i]+x[i+1]===t) {
+      x.splice(i+1,1);
+      i--;
+    }
+  }
+  
+  return x;
+}
+
+// Explanation:
+// trouble is the function name
+// x is the parameter representing the array of integers
+// t is the parameter representing the target sum
+// for loop iterates through the array from left to right
+// if(x[i]+x[i+1]===t) checks if the sum of the current element and the next element equals t
+// x.splice(i+1,1) removes the second element of the pair that sums to t
+// i-- decrements the index to recheck the current position after removal
+// return x returns the modified array after processing
