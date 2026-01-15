@@ -141,3 +141,35 @@ class Ship {
 // the weight contributed by the crew (1.5 units per crew member) from the total draft.
 // 5. It then checks if the resulting draft is greater than 20 and returns `true` if it is, 
 // indicating that the ship is worth looting; otherwise, it returns `false`.
+
+
+
+
+
+
+
+// Classy Classes
+// Basic Classes, this kata is mainly aimed at the new JS ES6 Update introducing classes
+
+// Task
+// Your task is to complete this Class, the Person class has been created. 
+// You must fill in the Constructor method to accept a name as string and an age as number, 
+// complete the get Info property and getInfo method/Info getter which should return johns age is 34
+
+//Solution 1:
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  get info() {
+    return `${this.name}s age is ${this.age}`;
+  }
+}
+
+// Explanation:
+// 1. We define a class named `Person` with a constructor that takes `name` and `age` as parameters.
+// 2. Inside the constructor, we set parameters to the instance using the `this` keyword.
+// 3. We define a getter method named `info` that returns a formatted string containing the person's name and age.
+// 4. The `info` getter can be accessed as a property, providing a convenient way to retrieve the person's information in the specified format.
