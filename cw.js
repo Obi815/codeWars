@@ -884,4 +884,14 @@
 
 
 ////////////////////////                NUMBER 27  Find the smallest integer in the array  ////////////////////
-going to work on a test for this computer
+class Hero {
+  // add default values here
+    constructor(name, position, health, damage) {
+      this.name = name;
+      this.position = position;
+      this.health = health;
+      this.damage = damage;
+      this.experience = 0
+        
+    }
+}
