@@ -175,6 +175,11 @@ class Person {
 // 4. The `info` getter can be accessed as a property, providing a convenient way to retrieve the person's information in the specified format.
 
 
+
+
+
+
+
 // Fun With ES6 Classes #1 - People, People, People
 // Define a class Person with the following properties:
 
