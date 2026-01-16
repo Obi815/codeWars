@@ -242,3 +242,68 @@ class Person {
 // 4. We define a method named `sayFullName` that returns the full name by concatenating `firstName` and `lastName`.
 // 5. We define a static method named `greetExtraTerrestrials` that takes a `raceName` parameter and returns a welcome message.
 // 6. The static method can be called on the class itself without needing to create an instance of the class.
+
+
+
+
+
+
+// Imagine you are creating a game where the user has to guess the correct number. 
+// But there is a limit of how many guesses the user can do.
+
+// If the user tries to guess more than the limit, the function should throw an error.
+// If the user guess is right it should return true.
+// If the user guess is wrong it should return false and lose a life.
+// Can you finish the game so all the rules are met?
+
+// Solution 1:
+class Guesser {
+  constructor(number, lives) {
+    this.number = number;
+    this.lives = lives;
+  }
+  
+  guess(n) {
+    if (!this.lives) throw Error
+    this.lives--
+    return n === this.number
+  }
+}
+
+// Explanation:
+// 1. We define a class named 'Guesser' with a constructor that takes two parameters: 
+//        `number` (the correct number to guess) and `lives` (the number of allowed guesses).
+// 2. Inside the constructor, we initialize the instance properties using the `this` keyword.
+// 3. We define a method named `guess` that takes a parameter `n` (the user's guess).
+// 4. Inside the `guess` method, we first check if there are any lives left.
+//    If there are no lives left, we throw an error.
+// 5. If there are lives left, we decrement the `lives` property by 1.
+// 6. Finally, we check if the user's guess `n` is equal to the correct number.
+//    If it is, we return `true`; otherwise, we return `false`.
+
+// Solution 2:
+// Longer but more readable
+class Guesser {
+  constructor(number, lives) {
+    this.number = number;
+    this.lives = lives;
+  }
+  
+  guess(n) {
+    if (!this.lives) throw 'No guesses left';
+    if (n === this.number) return true;
+    this.lives--;
+    return false;
+  }
+}
+
+// Explanation:
+// 1. We define a class named 'Guesser' with a constructor that takes two parameters: 
+//        `number` (the correct number to guess) and `lives` (the number of allowed guesses).
+// 2. Inside the constructor, we initialize the instance properties using the `this` keyword.
+// 3. We define a method named `guess` that takes a parameter `n` (the user's guess).
+// 4. Inside the `guess` method, we first check if there are any lives left.
+//    If there are no lives left, we throw an error message 'No guesses left'.
+// 5. If there are lives left, we check if the user's guess `n` is equal to the correct number.
+//    If it is, we return `true`.
+// 6. If the guess is incorrect, we decrement the `lives` property by 1 and return `false`.
