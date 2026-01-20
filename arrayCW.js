@@ -226,3 +226,33 @@ let number = (a) => a.map((v, i) => `${i + 1}: ${v}`)
 // 3. The map callback function takes two parameters: v (the current string) and i (the current index).
 // 4. For each line, we return a new string using template literals that combines the line number (i + 1) with the line itself, formatted as "n: string".
 // 5. Finally, we return the new array with the numbered lines.
+
+
+
+
+
+
+// Find the capitals
+// Write a function that takes a single non-empty string of only lowercase and uppercase ascii letters (word) as its argument, 
+// and returns an ordered list containing the indices of all capital (uppercase) letters in the string.
+
+// Example (Input --> Output)
+// "CodEWaRs" --> [0,3,4,6]
+
+
+// Solution:
+var capitals = function (word) {
+  var caps = [];
+	for(var i = 0; i < word.length; i++) {
+    if(word[i].toUpperCase() == word[i]) caps.push(i);
+  }
+  return caps;
+};
+
+// Explanation:
+// 1. We define a function capitals that takes a string word as input.
+// 2. We initialize an empty array caps to store the indices of capital letters.
+// 3. We use a for loop to iterate over each character in the string.
+// 4. Inside the loop, we check if the current character (word[i]) is equal to its uppercase version (word[i].toUpperCase()).
+//    - If they are equal, it means the character is uppercase, so we push its index i into the caps array.
+// 5. After the loop, we return the caps array containing the indices of all capital letters in the string.
