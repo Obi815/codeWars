@@ -186,3 +186,43 @@ function removeSmallest(numbers) {
 // 3. We use the filter method to create a new array that excludes the first occurrence of the smallest value.
 //    - The filter callback checks if the current index idx is not equal to the index of the smallest value (arr.indexOf(min)).
 // 4. Finally, we return the new array, which excludes the smallest value.
+
+
+
+
+
+
+// Testing 1-2-3
+// Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
+
+// Write a function which takes a list of strings and returns each line prepended by the correct number.
+
+// The numbering starts at 1. The format is n: string. Notice the colon and space in between.
+
+// Examples: (Input --> Output)
+
+// [] --> []
+// ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+
+var number = function(array) {
+  return array.map(function (line, index) {
+    return (index + 1) + ": " + line;
+  });
+}
+
+// Explanation:
+// 1. We define a function number that takes an array of strings as input.
+// 2. We use the map method to create a new array by transforming each line.
+// 3. The map callback function takes two parameters: line (the current string) and index (the current index).
+// 4. For each line, we return a new string that combines the line number (index + 1) with the line itself, formatted as "n: string".
+// 5. Finally, we return the new array with the numbered lines.
+
+
+// Solution 2:
+let number = (a) => a.map((v, i) => `${i + 1}: ${v}`)
+// Explanation:
+// 1. We define a function number using arrow function syntax that takes an array of strings a as input.
+// 2. We use the map method to create a new array by transforming each line.
+// 3. The map callback function takes two parameters: v (the current string) and i (the current index).
+// 4. For each line, we return a new string using template literals that combines the line number (i + 1) with the line itself, formatted as "n: string".
+// 5. Finally, we return the new array with the numbered lines.
