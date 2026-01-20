@@ -131,3 +131,58 @@ function minMax(arr){
 //   along with the spread operator (...) that expands the array into individual arguments to find the minimum value in the array.
 // 3. Similarly, we use Math.max with the spread operator to find the maximum value in the array.
 // 4. We return an array containing both the minimum and maximum values.
+
+
+
+
+
+
+
+
+// Removes the minimum 
+// The museum of incredibly dull things wants to get rid of some exhibits. 
+// Miriam, the interior architect, comes up with a plan to remove the most boring exhibits. 
+// She gives them a rating, and then removes the one with the lowest rating.
+
+// However, just as she finished rating all exhibits, she's off to an important fair, 
+// so she asks you to write a program that tells her the ratings of the exhibits after removing the lowest one. Fair enough.
+
+// Task
+// Given an array of integers, remove the smallest value. Do not mutate the original array/list. 
+// If there are multiple elements with the same value, remove the one with the lowest index. 
+// If you get an empty array/list, return an empty array/list.
+
+// Don't change the order of the elements that are left.
+
+// Examples
+// * Input: [1,2,3,4,5], output = [2,3,4,5]
+// * Input: [5,3,2,1,4], output = [5,3,2,4]
+// * Input: [2,2,1,2,1], output = [2,2,2,1]
+
+
+// Solution:
+function removeSmallest(numbers) {
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+}
+
+// Explanation:
+// 1. We define a function removeSmallest that takes an array of integers numbers as input.
+// 2. We find the index of the smallest value in the array using Math.min and indexOf.
+// 3. We create a new array by concatenating two slices of the original array:
+//    - The first slice contains all elements before the index of the smallest value.
+//    - The second slice contains all elements after the index of the smallest value.
+// 4. We use the spread operator (...) to combine these two slices into a new array.
+// 5. Finally, we return the new array, which excludes the smallest value.
+
+// Solution 2:
+function removeSmallest(numbers) {
+  const min = Math.min.apply(this, numbers);
+  return numbers.filter((num, idx, arr) => idx !== arr.indexOf(min));
+}
+// Explanation:
+// 1. We define a function removeSmallest that takes an array of integers numbers as input.
+// 2. We find the smallest value in the array using Math.min.apply.
+// 3. We use the filter method to create a new array that excludes the first occurrence of the smallest value.
+//    - The filter callback checks if the current index idx is not equal to the index of the smallest value (arr.indexOf(min)).
+// 4. Finally, we return the new array, which excludes the smallest value.
