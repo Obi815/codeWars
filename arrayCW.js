@@ -247,7 +247,7 @@ var capitals = function (word) {
     if(word[i].toUpperCase() == word[i]) caps.push(i);
   }
   return caps;
-};
+};cod
 
 // Explanation:
 // 1. We define a function capitals that takes a string word as input.

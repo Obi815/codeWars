@@ -990,3 +990,38 @@ function trouble(x, t){
 // x.splice(i+1,1) removes the second element of the pair that sums to t
 // i-- decrements the index to recheck the current position after removal
 // return x returns the modified array after processing
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+
+//////////////// //////                NUMBER 29  Are You playing Banjo? ////////////////////
+// Create a function which answers the question "Are you playing banjo?".
+// If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+// The function takes a name as its only argument, and returns one of the following strings:
+
+// name + " plays banjo" 
+// name + " does not play banjo"
+// Names given are always valid strings.
+
+// function areYouPlayingBanjo(name) {
+//   if(name.toLowerCase().startsWith("r")){
+//   return `${name} plays banjo`
+//  } else {
+//  return `${name} does not play banjo`
+//  }}
+// Explanation:
+// areYouPlayingBanjo is the function name
+// name is the parameter representing the input name
+// toLowerCase() converts the name to lowercase for case-insensitive comparison
+// startsWith("r") checks if the name starts with the letter "r"
+// `${name} plays banjo` constructs the return string if the condition is true
+// `${name} does not play banjo` constructs the return string if the condition is false
+
+// Simple way to do it:
+function areYouPlayingBanjo(name) {
+  return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+}
