@@ -1148,3 +1148,44 @@ function getCount(str) {
 // filter(c => "aeiouAEIOU".includes(c)) filters the array to include only vowels (both lowercase and uppercase)
 // .length counts the number of vowels found in the filtered array
 ////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+
+
+///////////////// Disemvowel Trolls ////////////////////////
+// Trolls are attacking your comment section!
+// A common way to deal with this situation is to remove all of the vowels from the trolls' comments, 
+// neutralizing the threat.
+// Your task is to write a function that takes a string and returns a new string with all vowels removed.
+// For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '');
+}
+// Explanation:
+// disemvowel is the function name
+// str is the parameter representing the input string
+// replace(/[aeiou]/gi, '') uses a regular expression to find all vowels in the string 
+// (both lowercase and uppercase) and replaces them with an empty string, effectively removing them
+
+
+
+const vowels = 'aeiou';
+
+function disemvowel(str) {
+  return str
+    .split('')
+    .filter(letter => !vowels.includes(letter.toLowerCase()))
+    .join('');
+}
+// Explanation:
+// disemvowel is the function name
+// str is the parameter representing the input string
+// split('') splits the string into an array of individual characters
+// filter(letter => !vowels.includes(letter.toLowerCase())) filters the array to exclude vowels (both lowercase and uppercase)
+// join('') joins the filtered array back into a single string without vowels
+////////////////////////      COMPLETED //////////////////////////
+
