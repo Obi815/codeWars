@@ -883,18 +883,18 @@
 
 
 
-////////////////////////                NUMBER 27  Find the smallest integer in the array  ////////////////////
-class Hero {
-  // add default values here
-    constructor(name, position, health, damage) {
-      this.name = name;
-      this.position = position;
-      this.health = health;
-      this.damage = damage;
-      this.experience = 0
+ ////////////////////////                NUMBER 27  Find the smallest integer in the array  ////////////////////
+// class Hero {
+//   // add default values here
+//     constructor(name, position, health, damage) {
+//       this.name = name;
+//       this.position = position;
+//       this.health = health;
+//       this.damage = damage;
+//       this.experience = 0
         
-    }
-}
+//     }
+// }
 
 
 ////////////////////////                NUMBER 27  Band Name Generator ////////////////////
@@ -970,16 +970,16 @@ class Hero {
 
 // Return the resulting array.
 
-function trouble(x, t){
-  for(var i=0; i<x.length; i++) {
-    if(x[i]+x[i+1]===t) {
-      x.splice(i+1,1);
-      i--;
-    }
-  }
+// function trouble(x, t){
+//   for(var i=0; i<x.length; i++) {
+//     if(x[i]+x[i+1]===t) {
+//       x.splice(i+1,1);
+//       i--;
+//     }
+//   }
   
-  return x;
-}
+//   return x;
+// }
 
 // Explanation:
 // trouble is the function name
@@ -1022,6 +1022,129 @@ function trouble(x, t){
 // `${name} does not play banjo` constructs the return string if the condition is false
 
 // Simple way to do it:
-function areYouPlayingBanjo(name) {
-  return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+// function areYouPlayingBanjo(name) {
+//   return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+// }
+// Explanation:
+// areYouPlayingBanjo is the function name
+// name is the parameter representing the input name
+// name[0].toLowerCase() accesses the first character of the name and converts it to lowercase
+// == 'r' checks if the first character is equal to 'r'
+// ? ' plays' : ' does not play' uses a ternary operator to choose the appropriate string based on the condition
+// The final return statement constructs the complete return string based on whether the name starts with 'r' or not
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+//////////////////// Abbreviate a Two Word Name ////////////////////////
+// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+// The output should be two capital letters with a dot separating them.
+
+// It should look like this:
+
+// Sam Harris => S.H
+
+// patrick feeney => P.F
+
+function abbrevName(name){
+  var nameArray = name.split(" ");
+  return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 }
+// Explanation:
+// abbrevName is the function name
+// name is the parameter representing the input name
+// split(" ") splits the name into an array of words based on the space character
+// nameArray[0][0] accesses the first letter of the first word
+// nameArray[1][0] accesses the first letter of the second word
+// + "." + concatenates the two initials with a dot in between
+// toUpperCase() converts the resulting string to uppercase
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+////////////// If you can't sleep, just count sheep!! ////////////////////////
+// Given a non-negative integer, 3 for example, 
+// return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
+// var countSheep = function (num){
+//   let str = "";
+//   for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+//   return str;
+// }
+// Explanation:
+// countSheep is the function name
+// num is the parameter representing the non-negative integer
+// str is initialized as an empty string to hold the murmur
+// for loop iterates from 1 to num
+// str+= `${i} sheep...` appends the current count of sheep to the str string
+// return str returns the final murmur string
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+//////////////// Total amount of points ////////////////////////
+// Our football team has finished the championship.
+// Our team's match results are recorded in a collection of strings. 
+// Each match is represented by a string in the format "x:y", where x is our team's score and y is the opponent's score.
+// For example: ["3:1", "2:2", "0:1", ...] 
+// Points are awarded for each match as follows:
+// if x > y: 3 points (win)
+// if x < y: 0 points (loss)
+// if x = y: 1 point (tie)
+// We need to write a function that takes this collection and returns the total number of points our team has earned.
+
+// function points(games) {
+//   return games.reduce((output,current)=>{
+//     let x = parseInt(current[0]);
+//     let y = parseInt(current[2]);
+//     let value= x>y ? 3 : x===y ? 1 : 0;
+//     return output+value;
+//   },0)
+// }
+// Explanation:
+// points is the function name
+// games is the parameter representing the collection of match results
+// return games.reduce(...) iterates through the games array, calculating the total points
+// => is the arrow function syntax that also returns the value
+// parseInt(current[0]) converts the first character of the current match result to an integer (our team's score)
+// parseInt(current[2]) converts the third character of the current match result to an integer (opponent's score)
+// x > y ? 3 : x === y ? 1 : 0 uses a ternary operator to determine the points based on the scores
+// output + value accumulates the total points
+// 0 is the initial value for the accumulation
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+
+
+
+/////////////////// Vowel Count ////////////////////////
+// Return the number (count) of vowels in the given string.
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+// The input string will only consist of lower case letters and/or spaces.
+// function getCount(str) {
+//   return (str.match(/[aeiou]/ig)||[]).length;
+// }
+// Explanation:
+// getCount is the function name
+// str is the parameter representing the input string
+// match(/[aeiou]/ig) uses a regular expression to find all vowels in the string, ignoring case
+// || [] ensures that if no vowels are found, an empty array is returned to avoid errors
+// .length counts the number of vowels found in the string
+
+
+// Solution 2
+function getCount(str) {
+ return str.split('').filter(c => "aeiouAEIOU".includes(c)).length;
+}
+// Explanation:
+// getCount is the function name
+// str is the parameter representing the input string
+// split('') splits the string into an array of individual characters
+// filter(c => "aeiouAEIOU".includes(c)) filters the array to include only vowels (both lowercase and uppercase)
+// .length counts the number of vowels found in the filtered array
+////////////////////////      COMPLETED //////////////////////////
