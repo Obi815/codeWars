@@ -1126,9 +1126,9 @@ function abbrevName(name){
 // Return the number (count) of vowels in the given string.
 // We will consider a, e, i, o, u as vowels for this Kata (but not y).
 // The input string will only consist of lower case letters and/or spaces.
-// function getCount(str) {
-//   return (str.match(/[aeiou]/ig)||[]).length;
-// }
+function getCount(str) {
+  return (str.match(/[aeiou]/ig)||[]).length;
+}
 // Explanation:
 // getCount is the function name
 // str is the parameter representing the input string
@@ -1174,7 +1174,6 @@ function disemvowel(str) {
 
 
 const vowels = 'aeiou';
-
 function disemvowel(str) {
   return str
     .split('')
@@ -1187,5 +1186,42 @@ function disemvowel(str) {
 // split('') splits the string into an array of individual characters
 // filter(letter => !vowels.includes(letter.toLowerCase())) filters the array to exclude vowels (both lowercase and uppercase)
 // join('') joins the filtered array back into a single string without vowels
+////////////////////////      COMPLETED //////////////////////////
+
+
+
+
+
+///////////////// Getr the middle character ////////////////////////
+// You are going to be given a non-empty string. Your job is to return the middle character(s) of the string.
+
+// If the string's length is odd, return the middle character.
+// If the string's length is even, return the middle 2 characters.
+// Examples:
+// "test" --> "es"
+// "testing" --> "t"
+// "middle" --> "dd"
+// "A" --> "A"
+
+function getMiddle(s){
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
+// Explanation:
+// getMiddle is the function name
+// s is the parameter representing the input string
+// substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1) extracts the middle character(s) based on the length of the string
+// Math.ceil(s.length / 2 - 1) calculates the starting index for extraction
+// s.length % 2 === 0 ? 2 : 1 determines the number of characters to extract (2 for even length, 1 for odd length)
+
+// Alternative Solution:
+function getMiddle(s){
+  return s.slice((s.length-1)/2, s.length/2+1);
+}
+// Explanation:
+// getMiddle is the function name
+// s is the parameter representing the input string
+// slice((s.length-1)/2, s.length/2+1) extracts the middle character(s) based on the length of the string
+// (s.length-1)/2 calculates the starting index for extraction
+// s.length/2+1 calculates the ending index for extraction
 ////////////////////////      COMPLETED //////////////////////////
 
