@@ -36,3 +36,5 @@ function squareDigits(num){
 // split('') splits the string into an array of individual characters (digits)
 // map(i => i*i) applies the square operation to each digit in the array
 // join('') concatenates the squared digits back into a single string
+
+
