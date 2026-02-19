@@ -2,9 +2,8 @@ Codewars Challenges & Solutions
 
 This project is a collection of Codewars challenges I’ve worked through to improve my JavaScript skills and problem-solving ability. Rather than just storing final answers, this repo shows my thinking process and how my solutions evolve over time.
 
-🔗 Live Demo: http://recruiters-love-seeing-live-demos.com/
 📸 Screenshot:
-<img src="screenshot.png" alt="Codewars solutions project screenshot" />
+<img src="/Screenshot 2026-02-18 at 6.46.40 PM.png" alt="Vowel Count Solution" />
 
 ⸻
 
