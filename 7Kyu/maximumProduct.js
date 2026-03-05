@@ -16,9 +16,19 @@
 // the maximum product is obtained from multiplying 
 //  −2 * 7= −14
 
+// What is it asking? 
+    // go through array a multiply adjacent numbers 
+        // For Loop Maybe?
+        // How to create new array... map or something else?
+    // Return Max Product 
+
 function adjacentElementsProduct(array) {
-    // go through an array and multiply adjacent numbers 
-        // 
-    // return the highest product 
-  return 0
+    // create array to store multiplied products 
+  let newArr = []
+  
+  //For loop to multiply every number to the adjacent numbers 
+  for(i=0; i < array.length-1; i++){ // array.length - 1 to stop at second to last number 
+    newArr.push(array[i]*array[i+1])
+  }  
+  return Math.max(...newArr) // Gets the max product 
 }
