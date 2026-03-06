@@ -21,15 +21,14 @@
 
 function calculate(a, operator, b) {
     //Check for opperator 
-    let equations = '+-*/'
-    if(!operator.includes(equations)){
-        return null 
-    } else if (operator === '/' && b === 0){
-        return null 
-    } else{
-        return eval(a + operator + b )
-    }
+    let equations = ['+', '-', '*', '/']
+    if(!equations.includes(operator)){ return null }
+    if(operator === '/' && b === 0){ return null }
+    
     // decide which opperator to use 
-    // do the equation
+    if(operator === '+') { return a + b} // Do the equation 
+    if(operator === '-') { return a - b} // Do the equation 
+    if(operator === '*') { return a * b} // Do the equation 
+    if(operator === '/') { return a / b} // Do the equation 
     // return outcome
 }
