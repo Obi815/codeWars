@@ -22,21 +22,11 @@
     // if it has flown by a lamp change the string from 'x' to 'o'
     // 'T' is where the drown has stoped 
 
-    function flyBy(lamps, drone){
-        lamps = lamps.split('')
-        drone = drone.split('')
-        string = []
-
-        // loop through the string
-        for(let i = 0; i < lamps.length; i++){
-            // compare the 'x' to the '=' or 'T'
-            if(drone.indexOf(lamps[i]) === '=' || drone.indexOf(lam) === 'T'){
-                string.push('o')
-            }else{
-                string.push('x')
-            }
-        }
-        // return the string 
-        return string.join('')
-
+function flyBy(lamps, drone){
+  return lamps.split('')
+              .map((item,index, arr) => index < drone.length ? 'o' : item)
+              .join('')
 }
+
+
+
