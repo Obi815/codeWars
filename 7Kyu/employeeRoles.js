@@ -38,4 +38,4 @@ function findEmployeesRole(name) {
 function findEmployeesRole(name) {
   let [employee] = employees.filter(x => `${x.firstName} ${x.lastName}` === name);
   return employee ? employee.role : "Does not work here!";
-}
+} 
