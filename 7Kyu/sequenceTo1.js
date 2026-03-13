@@ -33,3 +33,11 @@ function seqToOne(n){
     sequence.push(1) // push 1 after running a while loop
     return sequence
 }
+
+// Shorter Code:
+const seqToOne = n => {
+  const result = [n];
+  while (n !== 1)
+    result.push(n < 1 ? ++n : --n);
+  return result;
+};
