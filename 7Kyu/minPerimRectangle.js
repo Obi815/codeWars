@@ -20,3 +20,34 @@
 
 // Input range:
 // 1 <= area <= 5 x 10 ^ 10
+
+// What is it asking me to do? 
+    // 1. Find all possible areas with different perimeters
+    // 2. find the lowest perimeter sum of all of those areas 
+    // 3. return it 
+
+function minimumPerimeter(area) {
+  //Pseudo Code:
+  //Make a new area 
+  let numbers = []
+  // Find factors of of given area 
+  for(let i = 1; i <= area; i++){
+    if(area % i === 0){
+        factorNum = area / i 
+        numbers.push((i + i) + (factorNum + factorNum))// add the factors together 
+    }
+    numbers.sort((a,b) => a - b)
+}
+    return numbers[0]
+// return the smallest sum 
+} 
+
+// More optomized solution
+function minimumPerimeter(area) {
+ 
+  for(let i =  Math.floor(Math.sqrt(area)); i > 0; i--){
+    if(area % i === 0){
+      return 2 * (i + area/i)
+    }
+  }
+}
