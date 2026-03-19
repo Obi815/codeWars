@@ -10,3 +10,30 @@
 // less than 4 numbers separated by comma function returns "incorrect input".
 
 // If string contains 4 numbers but not consecutive it returns "not consecutive".
+
+// What is it asking me to do? 
+    // 1. take numbers separated by commas turn into numbers
+    // 2. check if string has exactly 4 numbers  -  if not return 'incorrect input'
+    // 3. check if string has a letters - Return 'incorrect input'
+    // 3. check for consecutive numbers - if not return 'not consecutive'
+    // 4. multiple the consecutive numbers and Square root it
+
+
+const checkRoot = (str) => { // takes in a string 
+  const nums = str.split(',').map(Number); //.split(',') -> ["1","2","3", "abc"]. 
+  //                            .map is doing (.map(x => Number(x))) -> [1,2,3,NaN]
+  
+  if (nums.length !== 4 || nums.some(n => isNaN(n) || n === 0)) return 'incorrect input';  
+  // do we have exactly 4 numbers or does at least one item match condition of 'isNan(n)' or does n = 0 if so return incorrect input
+
+  if (nums.some((n, idx) => +n !== +nums[0] + idx)) return 'not consecutive';
+  
+  
+  const product = nums.reduce((acc, cur) => acc * cur, 1);
+  const square = product + 1;
+  const squareRoot = Math.sqrt(square);
+  
+  return `${square}, ${squareRoot}`;
+}
+
+//.some stops when it finds one match 
