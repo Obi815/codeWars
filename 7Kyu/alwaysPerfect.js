@@ -27,7 +27,7 @@ const checkRoot = (str) => { // takes in a string
   // do we have exactly 4 numbers or does at least one item match condition of 'isNan(n)' or does n = 0 if so return incorrect input
 
   if (nums.some((n, idx) => +n !== +nums[0] + idx)) return 'not consecutive';
-  
+
   
   const product = nums.reduce((acc, cur) => acc * cur, 1);
   const square = product + 1;
@@ -37,3 +37,13 @@ const checkRoot = (str) => { // takes in a string
 }
 
 //.some stops when it finds one match 
+
+function squareOdds(arr){
+    let odds = []
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 !== 0 && arr[i] < 20){
+            odds.push(arr[i] ** 2)
+        }
+    }
+    return odds
+}

@@ -27,3 +27,19 @@ function filter_list(l) {
 // Filter method is used to create a new array with all elements that pass the test inside fo the function
 // v => typeof v == "number" is an arrow function that checks if the type of v is "number".
 // != checks if the type of v is not a string 
+
+
+
+
+
+
+
+//  Input:
+  // List of non-negative integers and strings 
+
+// Output:
+  // A new array that keeps only numbers 
+
+function filtering(arr){
+ return  arr.filter(item => typeof item === 'number')
+}

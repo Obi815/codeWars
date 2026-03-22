@@ -19,3 +19,32 @@ function magicSum(numbers) {
 
   return numbers.reduce((acc, curr) => acc + curr, 0) // Add up numbers in array
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Input:
+  // Two Numbers n and d
+
+// Output:
+  // The count of how many times D appears in squares 
+
+function squares(n, d) {
+  let count = 0
+  for(let i = 0; i <= n; i++){
+    let number = i ** 2
+    if(String(number).includes(String(d))){
+      count++
+    }
+  }
+  return count
+}
