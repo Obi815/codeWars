@@ -1,0 +1,32 @@
+// All of the animals are having a feast! Each animal is bringing one dish. 
+// There is just one rule: the dish must start and end with the same letters as the animal's name. 
+// For example, the great blue heron is bringing garlic naan and the chickadee is bringing chocolate cake.
+
+// Write a function feast that takes the animal's name and dish as arguments and returns true or false 
+// to indicate whether the beast is allowed to bring the dish to the feast.
+
+// Assume that beast and dish are always lowercase strings, and that each has at least two letters. 
+// beast and dish may contain hyphens and spaces, but these will not appear at the beginning or end of the string. 
+// They will not contain numerals.
+
+// Input:
+    // Animal name and dish animal is bringing 
+
+// Output:
+    // true or false if conditions are met (first and last letter of dish is === first and last letter of animal name)
+
+// Technique:
+    // Comparing - If else statement
+
+// Approach:
+    // First I take the given animal name and dish,
+    // then compare first and last letters of both animal name and dish
+    function feast(beast, dish) {
+        // if(beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length -1]){
+        //     return true
+        // }else{
+        //     return false
+        // }
+        return beast[0] === dish[0] && 
+        beast[beast.length - 1] === dish[dish.length -1] 
+}
