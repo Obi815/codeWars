@@ -12,3 +12,24 @@
 
 // [4, 6, 9, 1, 3]  -->  [5, 8, 2, 5, 8]  #  [4+1, 6+2, 9+3, 1+4, 3+5]
 //                                        #  9+3 = 12  -->  2
+
+
+// Input:
+    // Array of digits
+
+// Output: 
+    // Array of digits incremented by position in array
+    // if a double digit return the last digit of number
+
+// Technique:
+    // Mapping and looping 
+
+// Approach: First I take the array of digits, then map them using a for loop to increment each number, 
+// Then I check if number is greater than or equal to 10 and if so I return last digit of the number
+
+function incrementer(nums) { 
+    return nums.map((number, index) => {
+        let sum = number + index + 1
+        return sum = sum % 10
+    })
+}
