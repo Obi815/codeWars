@@ -33,3 +33,12 @@ function incrementer(nums) {
         return sum = sum % 10
     })
 }
+
+// Simple Solution: 
+const incrementer = nums => nums.map((n, i) => (n + i + 1) % 10)
+// nums is parameter
+// change array with map
+// use n and i as parameters for the map method
+// add n and i then add one because the array starts at 0 
+// get remainder '%' 10 because 10 does not divide into smaller numbers fully 
+//      getting the remaiders for every number
