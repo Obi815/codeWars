@@ -25,3 +25,26 @@
 // Input: "Hello, World!" -> Output: 3
 // Input: "A-dA" -> Output: 1
 // Input: "zz" -> Output: 0
+
+
+// Input: 
+    // String that can have:
+        // Letters 
+        // Numbers
+        // etc
+
+// Output: 
+    // Number of letters that are lonely
+
+// Technique:
+    // Filter
+
+
+const countLonelyLetters = text =>
+  [...text.toLowerCase().replace(/[^a-z]/g, '')].filter(
+    (el, i, arr) =>
+      i === arr.lastIndexOf(el) &&
+      i === arr.indexOf(el) &&
+      !arr.includes(String.fromCharCode(el.charCodeAt(0) - 1)) &&
+      !arr.includes(String.fromCharCode(el.charCodeAt(0) + 1))
+  ).length;
