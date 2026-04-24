@@ -13,3 +13,7 @@
     function twoSort(s) {
   return s.sort()[0].split('').join('***')
 }
+
+// Shorter Code: 
+const sumSquares = arr =>
+  arr.reduce((sum, n) => sum + n ** 2, 0);
