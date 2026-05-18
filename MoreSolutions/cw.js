@@ -1130,9 +1130,9 @@ function abbrevName(name){
 // Your task is to write a function that takes a string and returns a new string with all vowels removed.
 // For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
-function disemvowel(str) {
-  return str.replace(/[aeiou]/gi, '');
-}
+// function disemvowel(str) {
+//   return str.replace(/[aeiou]/gi, '');
+// }
 // Explanation:
 // disemvowel is the function name
 // str is the parameter representing the input string
@@ -1141,13 +1141,13 @@ function disemvowel(str) {
 
 
 
-const vowels = 'aeiou';
-function disemvowel(str) {
-  return str
-    .split('')
-    .filter(letter => !vowels.includes(letter.toLowerCase()))
-    .join('');
-}
+// const vowels = 'aeiou';
+// function disemvowel(str) {
+//   return str
+//     .split('')
+//     .filter(letter => !vowels.includes(letter.toLowerCase()))
+//     .join('');
+// }
 // Explanation:
 // disemvowel is the function name
 // str is the parameter representing the input string
@@ -1171,9 +1171,9 @@ function disemvowel(str) {
 // "middle" --> "dd"
 // "A" --> "A"
 
-function getMiddle(s){
-  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
-}
+// function getMiddle(s){
+//   return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+// }
 // Explanation:
 // getMiddle is the function name
 // s is the parameter representing the input string
@@ -1182,9 +1182,9 @@ function getMiddle(s){
 // s.length % 2 === 0 ? 2 : 1 determines the number of characters to extract (2 for even length, 1 for odd length)
 
 // Alternative Solution:
-function getMiddle(s){
-  return s.slice((s.length-1)/2, s.length/2+1);
-}
+// function getMiddle(s){
+//   return s.slice((s.length-1)/2, s.length/2+1);
+// }
 // Explanation:
 // getMiddle is the function name
 // s is the parameter representing the input string
@@ -1193,3 +1193,11 @@ function getMiddle(s){
 // s.length/2+1 calculates the ending index for extraction
 ////////////////////////      COMPLETED //////////////////////////
 
+s = ["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"]
+
+function twoSort(s) {
+  return s.sort()
+}
+
+// twoSort()
+console.log(twoSort())

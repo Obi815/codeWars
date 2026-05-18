@@ -106,4 +106,23 @@
                                         
                                         
                                         
-                  
+function circleMender(content) {
+  let result = ''
+  const arrOfLines = content.split('\n')
+  for(let i = 0; i< arrOfLines.length; i++){
+    const firstHashPos = arrOfLines[i].indexOf('#')
+    const lastHashPos = arrOfLines[i].lastIndexOf('#')
+    if(firstHashPos < 0 || firstHashPos === lastHashPos){
+      result += `${arrOfLines[i]}\n`
+    } else {
+      let hashes = arrOfLines[i].slice(firstHashPos, lastHashPos +1)
+      result = result + " ".repeat(firstHashPos) + hashes.replaceAll(' ', '#') + " ".repeat(arrOfLines[i].length - firstHashPos - hashes.length) + "\n"
+    }
+  }
+  const lastNewLine = result.lastIndexOf("\n")
+  return result.slice(0, lastNewLine)
+}
+
+
+
+const circleMender = content => content.replace(/\#.+\#/g, m => '#'.repeat(m.length))
