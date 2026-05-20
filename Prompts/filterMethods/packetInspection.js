@@ -49,5 +49,8 @@
 function inspectPackets(packets) {
     return packets
         .filter(packet => typeof packet === 'string' && packet.includes('PKT') && !packet.includes('ERROR'))
+        // .startsWith() is the better solution because an input could be "HELLOPKT999" 
+        .filter(packet => typeof packet === 'string' && packet.startsWith('PKT') && !packet.includes('ERROR'))
+        
         .map(packet => packet.split('PKT-')[1])
 }
