@@ -43,6 +43,6 @@
 
 function accessCodes(codes) {
     return codes
-        .filter(code => code.startsWith('EMP') && !isNaN(code) && code.length === 8)
+        .filter(code => typeof code === 'string' && code.startsWith('EMP') && code.length === 8)
         .map(code => code.toLowerCase())
 }
