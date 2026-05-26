@@ -27,5 +27,43 @@
 // Complete the function:
 
 function uniqueReceipts(receipts) {
-    return receipt = [...new Set(receipts)]
+    return receipts.filter(receipt =>
+        receipts.filter(item => item === receipt).length === 1
+    )
 }
+
+// How it works:
+// It is a filter inside of a filter.
+//
+// The outer filter goes through each receipt one by one.
+// For example:
+// [101, 202, 101, 303, 404, 303]
+//
+// First receipt = 101
+// Then receipt = 202
+// Then receipt = 101 again
+// etc.
+//
+// The inner filter searches the entire array for values equal to
+// the current receipt.
+//
+// When receipt = 101, the inner filter returns:
+// [101, 101]
+//
+// Then .length counts how many matching receipts were found.
+//
+// [101, 101].length === 2
+//
+// Since we only want receipts that appear exactly once,
+// we check:
+//
+// matches.length === 1
+//
+// Because 2 === 1 is false, the outer filter removes 101.
+//
+// When receipt = 202, the inner filter returns:
+// [202]
+//
+// [202].length === 1
+//
+// Because 1 === 1 is true, the outer filter keeps 202.
