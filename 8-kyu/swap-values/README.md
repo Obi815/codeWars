@@ -1,0 +1,1 @@
+<h2><a href=https://www.codewars.com/kata/5388f0e00b24c5635e000fc6/train/javascript target="_blank">Swap Values</a></h2><h3>8 kyu</h3><p>I would like to be able to pass an array with two elements to my function to swap the values. However it appears that the values aren't changing.</p><p>Can you figure out what's wrong here? </p>
