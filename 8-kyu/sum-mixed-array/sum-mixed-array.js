@@ -1,14 +1,14 @@
-// Params: Given a mixed array of numbers as strings and integers
-// Returns: The sum of all the numbers
+//Params: array with whole numbers as 'strings' & numbers
+//Return: the sum of all numbers 
 ​
-// Examples: 
-//    ([9, 3, '7', '3']), 22)
-//    (['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42)
-//    (['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41)
+//Examples:
+  //[1,'2','3', 4] -> 10
+  //['2','2','2'] -> 6
+  //['10', 2, 2, 2, 2, '10'] -> 28
 ​
-// Pseudo: 
-//   I will create a new array with only ints no strings - map method
-//   Then I will use the reduce to get the sum
-function sumMix(x){
-  return x.map(num => Number(num)).reduce((acc, curr) => acc + curr,0)
+function sumMix(x) {
+  //convert the string numbers to numbers
+  //reduce the array 
+  return x.map(num => parseInt(num)).reduce((a,c) => a + c, 0)
+  //.map changes stringed numbers to numbers 
 }
